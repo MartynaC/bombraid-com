@@ -12,9 +12,24 @@ function App() {
         <p>
           Edit <code>src/App.js</code> zjadlbym cos dobrego.
         </p>
+ adrian
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          Updated
+          upstream
+        >
+          ADERe <strong>strong ader </strong>
+          Martyna
+        </a>
+
+
         
         
 
+ martyna
       </header>
 
       <div className="App-header">
