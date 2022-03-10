@@ -14,8 +14,11 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          Updated
+          upstream
         >
           ADERe <strong>strong ader </strong>
+          Martyna
         </a>
       </header>
     </div>
