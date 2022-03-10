@@ -1,7 +1,10 @@
+import './App.css';
 import logo from "./logo.svg";
-import "./App.css";
+
+
 
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> zjadlbym cos dobrego.
         </p>
+ adrian
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,9 +24,21 @@ function App() {
           ADERe <strong>strong ader </strong>
           Martyna
         </a>
+
+
+        
+        
+
+ martyna
       </header>
+
+      <div className="App-header">
+        <h3>testujemy temacik</h3>
+        </div>
     </div>
+    
   );
+  
 }
 
 export default App;
