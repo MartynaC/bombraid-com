@@ -1,11 +1,11 @@
-<<<<<<< Updated upstream
-import logo from './logo.svg';
 import './App.css';
-=======
 import logo from "./logo.svg";
 import "./App.css";
 import ReactDom from "react-dom";
->>>>>>> Stashed changes
+
+import logo from "./logo.svg";
+import "./App.css";
+
 
 function App() {
   
@@ -14,23 +14,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> zjadlbym cos dobrego.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-<<<<<<< Updated upstream
-        >
-        Martyna
-=======
-       >
+        
+        
 
-          Martyna
-
->>>>>>> Stashed changes
-        </a>
       </header>
 
       <div className="App-header">
