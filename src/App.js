@@ -1,14 +1,23 @@
 import './App.css';
 import logo from "./logo.svg";
+<<<<<<< Updated upstream
 
 
+=======
+import "./App.css";
+import ReactDOM from "react-dom";
+import Menu from "./components/Menu";
+>>>>>>> Stashed changes
 
+ReactDOM.render(<Menu/>, document.getElementById("menu"));
 function App() {
   
   return (
+    
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Menu/>
+      </header>
         <p>
           Edit <code>src/App.js</code> zjadlbym cos dobrego.
         </p>
@@ -24,6 +33,7 @@ function App() {
           ADERe <strong>strong ader </strong>
           Martyna
         </a>
+<<<<<<< Updated upstream
 
 
         
@@ -35,6 +45,9 @@ function App() {
       <div className="App-header">
         <h3>testujemy temacik</h3>
         </div>
+=======
+     
+>>>>>>> Stashed changes
     </div>
     
   );
