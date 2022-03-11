@@ -41,6 +41,7 @@
 }
 
 h1 {
+  color: #00229a;
   font-family: Montserrat;
   font-size: 40px;
   font-style: normal;
@@ -52,6 +53,7 @@ h1 {
 }
 
 h2 {
+  color: #00229a;
   font-family: Montserrat;
   font-size: 24px;
   font-style: normal;
@@ -64,6 +66,7 @@ h2 {
 }
 
 h3 {
+  color: #00229a;
   font-family: Montserrat;
   font-size: 21px;
   font-style: normal;
@@ -77,7 +80,7 @@ h3 {
   max-width: 240px;
 }
 
-body {
+.bodyM {
   color: #00229a;
   font-family: Montserrat;
   font-size: 16px;
@@ -86,8 +89,11 @@ body {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  margin-left: 20px;
+  max-width: 90%;
 }
 .bodyS {
+  color: #00229a;
   font-family: Montserrat;
   font-size: 13px;
   font-style: normal;
@@ -97,8 +103,10 @@ body {
   margin-left: 20px;
   text-align: left;
   width: 80%;
+  max-width: 90%;
 }
 strong {
+  color: #00229a;
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
