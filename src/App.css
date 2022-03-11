@@ -57,7 +57,14 @@ span.bm-burger-bars {
   height: 2.5px !important;
   border-radius: 3px;
 }
-
+ul.bm-item.nav {
+  display: inline-flex!important;
+    /* max-width: 20%; */
+    margin-top: 0px;
+    position: absolute;
+    top: 20px;
+    right: 15%;
+}
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #fff;
@@ -74,6 +81,7 @@ span.bm-burger-bars {
   width: 34px;
   background-color: white;
   padding: 13px 11px 5px 11px;
+  top: 20px;
 }
 
 /* Color/shape of close button cross */
@@ -118,7 +126,7 @@ ul.nav li a.menu-item {
 /* General sidebar styles */
 .bm-menu {
   background: #00229a;
-  padding: 2.5em 1.5em 0;
+  padding: 3.5em 1.5em 0;
   font-size: 1.15em;
 }
 
