@@ -1,9 +1,13 @@
 import "./App.css";
 import bomba from "./img/bomb.svg";
+import Menu from "./components/Menu.js"
 
 function App() {
   return (
     <div className="App">
+      <header>
+       <Menu right/>
+      </header>
       <h1>
         КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
       </h1>

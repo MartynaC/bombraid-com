@@ -3,6 +3,7 @@
   text-align: center;
   max-width: 680px;
   margin: auto;
+      overflow: hidden;
 }
 
 .App-logo {
@@ -25,6 +26,140 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+/* MENU */
+
+header {
+position: fixed;
+    width: 100%;
+    max-width: 680px;
+    text-align: right;
+}
+ul.nav {
+  display: inline-flex;
+  list-style-type: none;
+}
+ul.nav li a {
+  color: #00229a;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+
+text-decoration: none;
+}
+ul.nav li  {
+background: #D9DEEE;
+padding: 13px 11px 5px 11px;
+margin-right: 10px; 
+
+}
+ul.nav li.hamburger {
+  background-color: #00229a;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+
+
+}
+span.bm-burger-bars {
+  height: 5px!important;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #fff;
+
+
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #fff;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 34px;
+  width: 34px;
+  background-color: white;  
+  padding: 13px 11px 5px 11px;  
+
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #fff;
+
+}
+span.bm-cross {
+  height: 24px;
+  width: 4px;
+  background: #00229A;
+  z-index: 99999;
+  border-radius: 3px;
+
+}
+div.bm-cross-button span {
+      position: absolute;
+    top: 30%!important;
+    right: 50%!important;
+}
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 100%!important;
+
+    left: 0px;
+    top: 0px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #ffffff;
 }
 
 .App-link {
