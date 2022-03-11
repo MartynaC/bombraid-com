@@ -1,57 +1,234 @@
-import './App.css';
-import logo from "./logo.svg";
-<<<<<<< Updated upstream
-
-
-=======
 import "./App.css";
-import ReactDOM from "react-dom";
-import Menu from "./components/Menu";
->>>>>>> Stashed changes
+import bomba from "./img/bomb.svg";
 
-ReactDOM.render(<Menu/>, document.getElementById("menu"));
 function App() {
-  
   return (
-    
     <div className="App">
-      <header className="App-header">
-      <Menu/>
-      </header>
-        <p>
-          Edit <code>src/App.js</code> zjadlbym cos dobrego.
+      <h1>
+        КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
+      </h1>
+      <section>
+        <img className="bomb" src={bomba} alt="" />
+        <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
+        <br />
+        <button className="button">завантажити pdf</button>
+        <br />
+        <h2>ГРАЖДАНE УКРАИНЬI!</h2>
+        <br />
+        <p className="bodyM">
+          Это пособие соэдано для того, чтобы объяснить вам, как подготовить
+          свой подвал к воэдушной и артилле рийской атаке. Самьıй лучший способ
+          защитить себя и своих близких – укрьıться в безопасном месте. Такими
+          местами являются: углубленные подвал и полуподвал.
         </p>
- adrian
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          Updated
-          upstream
+        <br />
+        <h1>Любого жилого дома!</h1>
+        <br />
+        <p className="bodyM">
+          Однако для этого они требуют специальной подготовки. В этом пособии мы
+          расскажем как это сделать самым простым способом.
+        </p>
+        <br />
+        <h2>УКРЬIТИЯ ПРЕДНАЭНАЧЕНЬI ДЛЯ ЭАЩИТЬI ОТ</h2>
+        <br />
+        <p className="bodyM">
+          <ul>
+            {" "}
+            <li>Осколков авиабомб и артиллерийских снарядов </li>
+            <li>Взрывной волны авиабом и арт.</li>
+            <li> cнарядов Обрушений и завалов зданий и их фрагментов</li>
+          </ul>
+        </p>
+        <br />
+        <p className="bodyM">
+          <strong>Если у вас вьістающий над грунтом полуподвал</strong>
+          <br />– То его необходимо укрепить снаружи (как минимум окна) <br />
+          <br />
+          <strong>Также в каждом подвале и полуподвале</strong>
+          <br />– Необходимо укрепить потолок
+        </p>
+        <br />
+        <p className="bodyM">
+          Для обустройства укрытий подойдут подвалы и полуподвалы хрущевок и
+          панельных зданий, а также новостроек.
+        </p>
+        <br />
+      </section>
+      <br />
+      <h2>ЭАЩИТА ОКОН</h2>
+      <p className="bodyM">
+        Окна являются самой слабой частью подвала и полуподвала, а потому
+        необходимо их заложить следующим образом.
+      </p>
+      <br />
+      <strong>ВАРИАНТ 1: Мешки с песком</strong>
+      <br />
+      <br />
+      <img src={bomba} alt="" />
+      <p className="bodyM">
+        20-60-20 зто условные величины показывающие соотношение окна и краёв
+        досок перед ним
+      </p>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <strong>ВАРИАНТ 2: Мешки с песком</strong>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <p className="bodyM">
+        Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
+        сторон досками и засыпать пространство между ними
+      </p>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <p className="bodyM">Обваловка мешками с песком и кругляками</p>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <p className="bodyM">Обваловка грунтом</p>
+      <hr />
+      <br />
+      <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
+      <p className="bodyM">Необходимо на случай обрушения здания.</p>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <p className="bodyM">
+        Не смотря на кажущуюся сложность, укрепление потолка является важным
+        этапом усиления конструкции подвала. Необязательно выполнять его один в
+        один с представленной схемой. Каркас на этой схеме рассчитан с запасом
+        на особые нагрузки, поэтому для защиты от бомб и артиллерии достаточно
+        укрепить потолок следуя схеме хотя бы приблизительно. (Схема взята из
+        методички 1966 г. по ГО, поэтому каркас рассчитан и на волну ядерного
+        взрыва)
+      </p>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h2>
+        В СЛУЧАЕ ДЕФИЦИТА ВРЕМЕНИ И МАТЕРИАЛОВ МОЖНО ОБОЙТИСЬ БЕЗ БРУСЬЕВ,
+        ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
+      </h2>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <p className="bodyM">
+        Для скрепления древесины можно использовать крепеж с саморезами либо
+        скобы для дерева
+      </p>
+      <strong>Помните – окна и потолок самое главное для укрепления!</strong>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <img src={bomba} alt="" />
+      <br />
+      <br />
+      <br />
+      <section>
+        <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
+        <ul>
+          <li className="bodyM">
+            Не забудьте обеспечить в вашем укрытии запас питьевой воды, еды и
+            медикаментов
+          </li>
+          <li className="bodyM">
+            Имейте при себе инструмены, такие как лопаты и лом, на случай если
+            придётся разгребать завал изнутри помогая спасателям ДСНС
+          </li>
+          <li className="bodyM">
+            {" "}
+            Возьмите пару огнетушителей на случай возникновения пожара{" "}
+          </li>
+          <li className="bodyM">
+            Если нет вентиляционных каналов, оставьте небольшие проемы в заделке
+            окон (не более 5 см толщиной){" "}
+          </li>
+          <li className="bodyM">
+            В укрытии вам придётся провести много времени, а потому подготовьте
+            его основательно и с минимальным (хотя бы каким-то) комфортом{" "}
+          </li>
+          <li className="bodyM">
+            Напоминаем ещё раз, что потолок не надо укреплять один в один как на
+            схеме, шаг колонн можно увеличить до двух-трех метров если у вас нет
+            времени или достаточного количества стройматериалов, а под потолок
+            ставить сразу балки
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <p className="bodyS">
+          Данное пособие разработано на основе: TECHNICZNE ZASADY PRZYSTOSOWANIA
+          PIWNIC POD BUDYNKAMI NA UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO
+          MINISTERSTWA OBRONY NARODOWEJ INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966
+          / Технические правила приспособления подвалов жилых домов в простейшие
+          укрытия, издастельство Министерства обороны, Инспекторат гражданской
+          обороны, Польша, 1966 г.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <div
+          style={{
+            width: "100%",
+            display: "inline-flex",
+          }}
         >
-          ADERe <strong>strong ader </strong>
-          Martyna
-        </a>
-<<<<<<< Updated upstream
-
-
-        
-        
-
- martyna
-      </header>
-
-      <div className="App-header">
-        <h3>testujemy temacik</h3>
+          <div style={{ width: "40%" }}>
+            <p className="bodyS">
+              Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
+              Разработка: <br />
+              Перевод: <br />
+              <br />
+              <br />
+              <br /> Польша 2022
+            </p>
+          </div>
+          <div style={{ width: "60%", paddingRight: "20px" }}>
+            <p className="bodyS" style={{ textAlign: "right" }}>
+              коллектив Obrona PRO <br />
+              Tomasz Czyżkowski <br />
+              Janek Mońka <br />
+              Martyna & Adrien <br />
+              Walery Butewicz
+            </p>
+          </div>
         </div>
-=======
-     
->>>>>>> Stashed changes
+      </section>
     </div>
-    
   );
-  
 }
 
 export default App;
