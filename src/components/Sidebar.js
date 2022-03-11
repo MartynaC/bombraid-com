@@ -1,20 +1,29 @@
-import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
 
-export default props => {
+export default (props) => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
-        Home
+      <a className="menu-item" href="#sec1">
+        ГРАЖДАНE УКРАИНЬI!
       </a>
       <a className="menu-item" href="/salads">
-        Salads
+        ЭАЩИТА ОКОН
       </a>
       <a className="menu-item" href="/pizzas">
-        Pizzas
+        ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА
       </a>
       <a className="menu-item" href="/desserts">
-        Desserts
+        ОБВАЛОВКА НАРУЖНЬІХ СТЕН
+      </a>
+      <a className="menu-item" href="/desserts">
+        УКРЕПЛЕНИЕ ПОТОЛКА
+      </a>
+      <a className="menu-item" href="/desserts">
+        УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ
+      </a>
+      <a className="menu-item" href="/desserts">
+        ОСТАЛЬНАЯ ИНФОРМАЦИЯ
       </a>
     </Menu>
   );
