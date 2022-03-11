@@ -1,6 +1,25 @@
 import "./App.css";
 import bomba from "./img/bomb.svg";
 import Menu from "./components/Menu.js";
+import { LightgalleryItem } from "react-lightgallery";
+import asset1 from "./img/asset1.svg";
+import asset2 from "./img/Asset2.svg";
+import asset3 from "./img/Asset3.svg";
+import asset4 from "./img/Asset4.svg";
+import asset5 from "./img/Asset5.svg";
+import asset6 from "./img/Asset6.svg";
+import asset7 from "./img/Asset7.svg";
+import asset8 from "./img/Asset8.svg";
+import asset9 from "./img/Asset9.svg";
+import asset10 from "./img/Asset10.svg";
+import asset11 from "./img/Asset11.svg";
+import asset12 from "./img/Asset12.svg";
+import asset13 from "./img/Asset13.svg";
+import asset14 from "./img/Asset14.svg";
+import asset15 from "./img/Asset15.svg";
+
+
+
 
 function App() {
   return (
@@ -8,10 +27,12 @@ function App() {
       <header>
         <Menu right />
       </header>
+       <section className="sect-1">
       <h1>
         КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
       </h1>
-      <section>
+       </section>
+      <section className="sect-2">
         <div
           style={{
             width: "100%",
@@ -21,9 +42,8 @@ function App() {
           <div style={{ width: "60%" }}>
             <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
           </div>
-          <div style={{ width: "40%" }}>
+          <div className="bomb-image" style={{ width: "40%" }}>
             <img
-              style={{ marginRight: "-82px", marginTop: "-82px" }}
               src={bomba}
               alt=""
             />
@@ -74,7 +94,7 @@ function App() {
         <p className="bodyM">Перейдем к конкретным шагам.</p>
         <br />
       </section>
-      <br />
+      <section className="sect-3">
       <h2>ЭАЩИТА ОКОН</h2>
       <p className="bodyM">
         Окна являются самой слабой частью подвала и полуподвала, а потому
@@ -84,46 +104,48 @@ function App() {
       <strong>ВАРИАНТ 1: Мешки с песком</strong>
       <br />
       <br />
-      <img src={bomba} alt="" />
+      <LightgalleryItem src={asset1}>
+      <img src={asset1} alt="" />
+       </LightgalleryItem>
       <p className="bodyM">
         20-60-20 зто условные величины показывающие соотношение окна и краёв
         досок перед ним
       </p>
       <br />
-      <img src={bomba} alt="" />
+          <img src={asset2} alt="" />
       <br />
       <br />
       <strong>ВАРИАНТ 2: Мешки с песком</strong>
       <br />
       <br />
-      <img src={bomba} alt="" />
+           <img src={asset3} alt="" />
       <br />
-      <img src={bomba} alt="" />
+            <img src={asset4} alt="" />
       <br />
       <p className="bodyM">
         Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
         сторон досками и засыпать пространство между ними.
       </p>
       <br />
-      <img src={bomba} alt="" />
+            <img src={asset5} alt="" />
       <br />
       <br />
       <hr />
       <br />
       <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset6} alt="" />
       <br />
       <br />
       <hr />
       <br />
       <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset7} alt="" />
       <br />
       <p className="bodyM">Обваловка мешками с песком и кругляками</p>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset8} alt="" />
       <br />
       <p className="bodyM">Обваловка грунтом</p>
       <br />
@@ -132,7 +154,7 @@ function App() {
       <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
       <p className="bodyM">Необходимо на случай обрушения здания.</p>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset9} alt="" />
       <br />
       <p className="bodyM">
         Не смотря на кажущуюся сложность, укрепление потолка является важным
@@ -149,11 +171,11 @@ function App() {
         волну ядерного взрыва)
       </p>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset10} alt="" />
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset11} alt="" />
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset12} alt="" />
       <br />
       <br />
       <hr />
@@ -163,7 +185,7 @@ function App() {
         ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
       </h2>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset13} alt="" />
       <br />
       <p className="bodyM">
         Для скрепления древесины можно использовать крепеж с саморезами либо
@@ -176,14 +198,15 @@ function App() {
       <br />
       <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset14} alt="" />
       <br />
       <br />
-      <img src={bomba} alt="" />
+      <img src={asset15} alt="" />
       <br />
       <br />
       <br />
-      <section>
+    </section>
+      <section className="sect-4">
         <br />
         <br />
         <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
