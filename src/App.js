@@ -2,7 +2,7 @@ import "./App.css";
 import Menu from "./components/Menu.js";
 import BackToTop from "./components/BackToTop.js";
 import { LightgalleryItem } from "react-lightgallery";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 import lupka from "./img/lupka.svg";
 import bomba from "./img/bomb.svg";
 import asset1 from "./img/asset1.svg";
@@ -43,9 +43,15 @@ function PL() {
     <>
      
       <nav>
-        <Link to="/">PL</Link>
-        <Link to="/ru">RU</Link>
-        <Link to="/ua">UA</Link>
+        <NavLink to="/" className={isActive =>
+    "pl" + (!isActive ? " unselected" : "")
+  }>PL</NavLink>
+        <NavLink to="/ru" className={isActive =>
+    "ru" + (!isActive ? " unselected" : "")
+  }>RU</NavLink>
+        <NavLink to="/ua" className={isActive =>
+    "ua" + (!isActive ? " unselected" : "")
+  }>UA</NavLink>
         <Menu right />
       </nav>
       <section className="sect-1">
@@ -351,9 +357,15 @@ function RU() {
   return (
     <>
        <nav>
-      <Link to="/">PL</Link>
-        <Link to="/ru">RU</Link>
-        <Link to="/ua">UA</Link>
+      <NavLink to="/" className={isActive =>
+    "pl" + (!isActive ? " unselected" : "")
+  }>PL</NavLink>
+        <NavLink to="/ru" className={isActive =>
+    "ru" + (!isActive ? " unselected" : "")
+  }>RU</NavLink>
+        <NavLink to="/ua" className={isActive =>
+    "ua" + (!isActive ? " unselected" : "")
+  }>UA</NavLink>
         <Menu />
       </nav>   
       <section className="sect-1">
@@ -420,7 +432,8 @@ function RU() {
           <br />– Необходимо укрепить потолок
         </p>
         <br />
-        <p className="bodyM">Перейдем к конкретным шагам.</p>
+        <p className="bodyM">Для обустройства укрытий
+подойдут подвалы и полуподвалы хрущевок и панельных зданий, а также новостроек.</p>
         <br />
       </section>
     </>
@@ -430,13 +443,87 @@ function UA() {
   return (
     <>
       <nav>
-      <Link to="/">PL</Link>
-        <Link to="/ru">RU</Link>
-        <Link to="/ua">UA</Link>
+      <NavLink to="/" className={isActive =>
+    "pl" + (!isActive ? " unselected" : "")
+  }>PL</NavLink>
+        <NavLink to="/ru" className={isActive =>
+    "ru" + (!isActive ? " unselected" : "")
+  }>RU</NavLink>
+        <NavLink to="/ua" className={isActive =>
+    "ua" + (!isActive ? " unselected" : "")
+  }>UA</NavLink>
         <Menu />
       </nav>
  
+      <section className="sect-1">
+      <h1>
+      ЯК  <br />ЗМІЦНИТИ <br />  ПІДВАЛ
+      </h1>
+       </section>
+       <section className="sect-2 ua">
+        <div
+          style={{
+            width: "100%",
+            display: "inline-flex",
+          }}
+        >
+          <div style={{ width: "60%" }}>
+            <h3>РЕКОМЕНДАЦІЇ ЩОДО ПРИГОТУВАННЯ УКРИТТЯ У ЖИТЛОВОМУ БУДИНКУ</h3>
+          </div>
+          <div className="bomb-image" style={{ width: "40%" }}>
+            <img
+              src={bomba}
+              alt=""
+            />
+          </div>
+        </div>
+        <br />
+        <button className="button">завантажити pdf</button>
+        <br />
+        <br />
+        <br />
+        <h2 id="sec1">ГРОМАДЯНИ УКРАЇНИ!</h2>
+        <br />
+        <p className="bodyM">
+        Цей посібник створено для того, щоб пояснити вам, як підготувати свій підвал до повітряної атаки та артобстрілу.
+        <br />
+        Найкращий спосіб захистити себе і своїх близьких – це сховатися в безпечному місці. Такими місцями є: вглиблений підвал та напівпідвал.
+        </p>
+        <br />
+        <h1>будь-якого житлового будинку!</h1>
+        <br />
+        <p className="bodyM">
+        Проте для цього вони вимагають спеціального облаштування.
+          <br /> У цьому посібнику ми пояснимо вам, як це зробити у найпростіший спосіб.
+        </p>
+        <br />
+        <h2>УКРИТТЯ ПРИЗНАЧЕННІ
+ДЛЯ ЗАХИСТУ ВІД:</h2>
+        <br />
+        <p className="bodyM">
+          <ul>
+            {" "}
+            <li> Уламків авіабомб та артснарядів  </li>
+            <li>Вибухової хвилі авіабомб та артснарядів</li>
+            <li>Обвалів та завалів будівель та їхніх окремих елементів</li>
+          </ul>
+        </p>
+        <br />
+        <p className="bodyM">
+         
 
+
+          <strong>Якщо у вас напівпідвал, частина якого вистає над землею,</strong>
+          <strong><br />то його необхідно укріпити зовні (як мінімум вікна). <br /></strong>
+          <br />
+          <strong>Також у кожному підвалі та</strong>
+          <br /><strong>напівпідвалі необхідно зміцнити стелю.</strong>
+          
+        </p>
+        <br />
+        <p className="bodyM">Для облаштування укриття підійдуть підвали та напівпідвали хрущовок та панельних будинків, а також новобудов.</p>
+        <br />
+      </section>
     </>
   );
 }

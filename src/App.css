@@ -79,6 +79,10 @@ nav a {
   font-size: 18px;
   text-decoration: none;
 }
+.ru[aria-current="page"], .pl[aria-current="page"], .ua[aria-current="page"] {
+  background-color: #00229A;
+  color: white;
+}
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: relative;
@@ -315,6 +319,9 @@ section.sect-1 {
 section.sect-2,
 section.sect-4 {
   background-color: #efefef;
+}
+section.sect-2.ua {
+  background-color: #faf0dc;
 }
 section img {
   width: 100%;
