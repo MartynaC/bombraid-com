@@ -12,7 +12,7 @@ ReactDOM.render(
     <LightgalleryProvider>
     <BrowserRouter>
     <App />
-    </BrowserRouter>,
+    </BrowserRouter>
       </LightgalleryProvider>
   </React.StrictMode>,
   document.getElementById('root')

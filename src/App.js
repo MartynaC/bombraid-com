@@ -21,6 +21,7 @@ import asset13 from "./img/Asset13.svg";
 import asset14 from "./img/Asset14.svg";
 import asset15 from "./img/Asset15.svg";
 import pdf from "./pdf/Final_КАК-УКРЕПИТЬ-ПОДВАЛ.pdf";
+import pdfua from "./pdf/Final_ЯК-ЗМІЦНИТИ-ПІДВАЛ.pdf";
 
 function App() {
   return (
@@ -59,7 +60,7 @@ function PL() {
           КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
         </h1>
       </section>
-      <section className="sect-2">
+      <section className="sect-2 pl">
         <div
           style={{
             width: "100%",
@@ -74,9 +75,9 @@ function PL() {
           </div>
         </div>
         <br />
-        <a href={pdf} download>
-          <button className="button">завантажити pdf</button>
-        </a>
+        
+          <button className="button">завантажити PDF</button>
+        
         <br />
         <br />
         <br />
@@ -275,7 +276,7 @@ function PL() {
         <br />
         <br />
       </section>
-      <section className="sect-4">
+      <section className="sect-4 pl">
         <br />
         <br />
         <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
@@ -331,7 +332,7 @@ function PL() {
           <div style={{ width: "50%" }}>
             <p className="bodyS">
               Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
-              Разработка: <br /> Перевод:
+              Разработка: <br />  <br />Перевод:
               <br />
               <br />
               <br /> Польша 2022
@@ -342,7 +343,7 @@ function PL() {
               коллектив Obrona PRO <br />
               Tomasz Czyżkowski <br />
               Janek Mońka <br />
-              Martyna & Adrien <br />
+              Martyna Chojnacka & Adrien Cognac <br />
               Walery Butewicz
             </p>
             <BackToTop />
@@ -373,7 +374,7 @@ function RU() {
         КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
       </h1>
        </section>
-      <section className="sect-2">
+      <section className="sect-2 ru">
         <div
           style={{
             width: "100%",
@@ -391,7 +392,9 @@ function RU() {
           </div>
         </div>
         <br />
-        <button className="button">завантажити pdf</button>
+        <a href={pdf} download>
+          <button className="button">завантажити PDF</button>
+        </a>
         <br />
         <br />
         <br />
@@ -436,6 +439,235 @@ function RU() {
 подойдут подвалы и полуподвалы хрущевок и панельных зданий, а также новостроек.</p>
         <br />
       </section>
+      <section className="sect-3 ru">
+        <h2>ЭАЩИТА ОКОН</h2>
+        <p className="bodyM">
+          Окна являются самой слабой частью подвала и полуподвала, а потому
+          необходимо их заложить следующим образом:
+        </p>
+        <br />
+        <strong>ВАРИАНТ 1: Мешки с песком</strong>
+        <br />
+        <br />
+        <LightgalleryItem src={asset1}>
+          <img src={asset1} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <p className="bodyM">
+          20-60-20 зто условные величины показывающие соотношение окна и краёв
+          досок перед ним
+        </p>
+        <br />
+        <LightgalleryItem src={asset2}>
+          <img src={asset2} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <strong>ВАРИАНТ 2: Мешки с песком</strong>
+        <br />
+        <br />
+        <LightgalleryItem src={asset3}>
+          <img src={asset3} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset4}>
+          <img src={asset4} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+          Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
+          сторон досками и засыпать пространство между ними.
+        </p>
+        <br />
+        <LightgalleryItem src={asset5}>
+          <img src={asset5} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
+        <br />
+        <LightgalleryItem src={asset6}>
+          <img src={asset6} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
+        <br />
+        <LightgalleryItem src={asset7}>
+          <img src={asset7} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">Обваловка мешками с песком и кругляками</p>
+        <br />
+        <LightgalleryItem src={asset8}>
+          <img src={asset8} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">Обваловка грунтом</p>
+        <br />
+        <hr />
+        <br />
+        <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
+        <p className="bodyM">Необходимо на случай обрушения здания.</p>
+        <br />
+        <LightgalleryItem src={asset9}>
+          <img src={asset9} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+          Не смотря на кажущуюся сложность, укрепление потолка является важным
+          этапом усиления конструкции подвала. Необязательно выполнять его один
+          в один с представленной схемой.
+          <br /> <br /> Каркас на этой схеме рассчитан с запасом на особые
+          нагрузки, поэтому для защиты от бомб и артиллерии достаточно укрепить
+          потолок следуя схеме хотя бы приблизительно.
+        </p>
+        <br />
+        <br />
+        <p className="bodyS">
+          (Схема взята из методички 1966 г. по ГО, поэтому каркас рассчитан и на
+          волну ядерного взрыва)
+        </p>
+        <br />
+        <LightgalleryItem src={asset10}>
+          <img src={asset10} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset11}>
+          <img src={asset11} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset12}>
+          <img src={asset12} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>
+          В СЛУЧАЕ ДЕФИЦИТА ВРЕМЕНИ И МАТЕРИАЛОВ МОЖНО ОБОЙТИСЬ БЕЗ БРУСЬЕВ,
+          ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
+        </h2>
+        <br />
+        <LightgalleryItem src={asset13}>
+          <img src={asset13} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+          Для скрепления древесины можно использовать крепеж с саморезами либо
+          скобы для дерева
+        </p>
+        <strong>Помните – окна и потолок самое главное для укрепления!</strong>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
+        <br />
+        <LightgalleryItem src={asset14}>
+          <img src={asset14} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <LightgalleryItem src={asset15}>
+          <img src={asset15} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <br />
+      </section>
+      <section className="sect-4 ru">
+        <br />
+        <br />
+        <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
+        <ul>
+          <li className="bodyM">
+            Не забудьте обеспечить в вашем укрытии запас питьевой воды, еды и
+            медикаментов
+          </li>
+          <li className="bodyM">
+            Имейте при себе инструмены, такие как лопаты и лом, на случай если
+            придётся разгребать завал изнутри помогая спасателям ДСНС
+          </li>
+          <li className="bodyM">
+            Возьмите пару огнетушителей на случай возникновения пожара
+          </li>
+          <li className="bodyM">
+            Если нет вентиляционных каналов, оставьте небольшие проемы в заделке
+            окон (не более 5 см толщиной)
+          </li>
+          <li className="bodyM">
+            В укрытии вам придётся провести много времени, а потому подготовьте
+            его основательно и с минимальным (хотя бы каким-то) комфортом{" "}
+          </li>
+          <li className="bodyM">
+            Напоминаем ещё раз, что потолок не надо укреплять один в один как на
+            схеме, шаг колонн можно увеличить до двух-трех метров если у вас нет
+            времени или достаточного количества стройматериалов, а под потолок
+            ставить сразу балки
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <p className="bodyS">
+          Данное пособие разработано на основе:
+          <br />
+          <br /> TECHNICZNE ZASADY PRZYSTOSOWANIA PIWNIC POD BUDYNKAMI NA
+          UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO MINISTERSTWA OBRONY NARODOWEJ
+          INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966 / Технические правила
+          приспособления подвалов жилых домов в простейшие укрытия,
+          издастельство Министерства обороны, Инспекторат гражданской обороны,
+          Польша, 1966 г.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <div
+          style={{
+            width: "100%",
+            display: "inline-flex",
+          }}
+        >
+           <div style={{ width: "50%" }}>
+            <p className="bodyS">
+              Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
+              Разработка: <br />  <br />Перевод:
+              <br />
+              <br />
+              <br /> Польша 2022
+            </p>
+          </div>
+          <div style={{ width: "50%", float: "right" }}>
+            <p className="bodyS">
+              коллектив Obrona PRO <br />
+              Tomasz Czyżkowski <br />
+              Janek Mońka <br />
+              Martyna Chojnacka & Adrien Cognac <br />
+              Walery Butewicz
+            </p>
+            <BackToTop />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
@@ -478,7 +710,10 @@ function UA() {
           </div>
         </div>
         <br />
-        <button className="button">завантажити pdf</button>
+        <a href={pdfua} download>
+        <button className="button">завантажити PDF</button>
+        </a>
+      
         <br />
         <br />
         <br />
@@ -523,6 +758,215 @@ function UA() {
         <br />
         <p className="bodyM">Для облаштування укриття підійдуть підвали та напівпідвали хрущовок та панельних будинків, а також новобудов.</p>
         <br />
+      </section>
+      <section className="sect-3 ua">
+        <h2>ЗАХИСТ ВІКОН</h2>
+        <p className="bodyM">
+        Вікна – це найслабкіша частина підвалу та напівпідвалу, тож їх необхідно закласти наступним чином:
+        </p>
+        <br />
+        <strong>ВАРІАНТ 1: Мішки з піском</strong>
+        <br />
+        <br />
+        <LightgalleryItem src={asset1}>
+          <img src={asset1} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <p className="bodyM">
+        20-60-20 це умовні величини, що показують співвідношення вікна і країв дощок перед ним
+        </p>
+        <br />
+        <LightgalleryItem src={asset2}>
+          <img src={asset2} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <strong>ВАРИАНТ 2: Мешки с песком</strong>
+        <br />
+        <br />
+        <LightgalleryItem src={asset3}>
+          <img src={asset3} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset4}>
+          <img src={asset4} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+        Крім мішків з піском/обвалування землею, також необхідно з обох боків закрити вікна дошками та засипати простір між ними.
+        </p>
+        <br />
+        <LightgalleryItem src={asset5}>
+          <img src={asset5} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ЗАСИПКА ВГЛИБЛЕНОГО ПІДВАЛЬНОГО ВІКНА</h2>
+        <br />
+        <LightgalleryItem src={asset6}>
+          <img src={asset6} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ОБВАЛУВАННЯ ЗОВНІШНІХ СТІН</h2>
+        <br />
+        <LightgalleryItem src={asset7}>
+          <img src={asset7} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">Обвалування мішками з піском та кругляком.</p>
+        <br />
+        <LightgalleryItem src={asset8}>
+          <img src={asset8} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">Обвалування землею</p>
+        <br />
+        <hr />
+        <br />
+        <h2>ЗМІЦНЕННЯ СТЕЛІ</h2>
+        <p className="bodyM">Необхідно на випадок обвалення будинку.</p>
+        <br />
+        <LightgalleryItem src={asset9}>
+          <img src={asset9} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+        конструкції підвалу. Не обов'язково зміцнювати її один в один за схемою на зображенні.
+          <br /> <br />Каркас на цій схемі розрахований на особливі навантаження, тому для захисту від бомб та артилерії достатньо зміцнити стелю хоча б приблизно взоруючись на цій схемі.
+        
+        </p>
+        <br />
+        <br />
+        <p className="bodyS">
+        (Схема походить з методички по Цивільній Обороні з 1966 р., тому каркас також розрахований на хвилю ядерного вибуху.)
+        </p>
+        <br />
+        <LightgalleryItem src={asset10}>
+          <img src={asset10} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset11}>
+          <img src={asset11} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <LightgalleryItem src={asset12}>
+          <img src={asset12} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>
+        У РАЗІ ВІДСУТНОСТІ ЧАСУ ТА МАТЕРІАЛІВ МОЖНА ОБІЙТИСЯ БЕЗ БРУСІВ, ПІДПИРАЮЧИ СТЕЛЮ БЕЗПОСЕРЕДНЬО НА БАЛКАХ
+        </h2>
+        <br />
+        <LightgalleryItem src={asset13}>
+          <img src={asset13} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <p className="bodyM">
+         
+Для скріплення деревини можна використовувати шурупи або скоби для дерева.
+        </p>
+        <strong>Помните – окна и потолок самое главное для укрепления!</strong>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>Пам'ятайте, що найголовніше – це зміцнити вікна та стелю!</h2>
+        <br />
+        <LightgalleryItem src={asset14}>
+          <img src={asset14} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <LightgalleryItem src={asset15}>
+          <img src={asset15} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <br />
+        <br />
+        <br />
+      </section>
+      <section className="sect-4 ua">
+        <br />
+        <br />
+        <h1>ДОДАТКОВА ІНФОРМАЦІЯ</h1>
+        <ul>
+          <li className="bodyM">
+          Не забудьте забезпечити ваше укриття запасом питної води, їжі та медикаментів
+          </li>
+          <li className="bodyM">
+          Майте при собі такі інструменти, як: лопати і лом на випадок, якщо доведеться розгрібати завал зсередини допомагаючи рятувальникам Державної Служби з Надзвичайних Ситуацій
+          </li>
+          <li className="bodyM">
+          Візьміть кілька вогнегасників на випадок пожежі
+          </li>
+          <li className="bodyM">
+          Якщо немає вентиляційних каналів, залиште невеликі отвори в закладених вікнах (не більше 5 cm завтовшки)
+          </li>
+          <li className="bodyM">
+          У сховищі вам можливо доведеться провести багато часу, тож облаштуйте його ґрунтовно і хоча б з мінімальним комфортом
+          </li>
+          <li className="bodyM">
+          Ще раз звертаємо вашу увагу, що не потрібно зміцнювати стелю ідентично до схематичного зображення. Крок між колонами можна збільшити до 2-3 метрів, а якщо у вас немає часу або достатньої кількості будматеріалів, то стелю можна одразу підперти  балками
+          </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
+        <p className="bodyS">
+        Цей посібник опрацьовано на підставі:
+          <br />
+          <br /> TECHNICZNE ZASADY PRZYSTOSOWANIA PIWNIC POD BUDYNKAMI NA UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO MINISTERSTWA OBRONY NARODOWEJ INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966 / Технічні правила пристосування підвалів житлових будинків під укриття, Видавництво Міністерства оборони, Інспекторат Цивільної Оборони, Польща, 1966 р.
+        </p>
+        <br />
+        <hr />
+        <br />
+        <div
+          style={{
+            width: "100%",
+            display: "inline-flex",
+          }}
+        >
+         <div style={{ width: "50%" }}>
+            <p className="bodyS">
+              Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
+              Разработка: <br />  <br />Перевод:
+              <br />
+              <br />
+              <br /> Польша 2022
+            </p>
+          </div>
+          <div style={{ width: "50%", float: "right" }}>
+            <p className="bodyS">
+              коллектив Obrona PRO <br />
+              Tomasz Czyżkowski <br />
+              Janek Mońka <br />
+              Martyna Chojnacka & Adrien Cognac <br />
+              Walery Butewicz
+            </p>
+            <BackToTop />
+          </div>
+        </div>
       </section>
     </>
   );

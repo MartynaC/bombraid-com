@@ -46,6 +46,7 @@ ul.nav {
   padding-left: 0px;
   margin-top: 0px;
 }
+
 a.bm-item.menu-item {
   display: block;
   background-color: transparent;
@@ -102,6 +103,7 @@ ul.bm-item.nav {
   position: absolute;
   top: 26px;
   right: 96px;
+  outline: none;
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -320,8 +322,11 @@ section.sect-2,
 section.sect-4 {
   background-color: #efefef;
 }
-section.sect-2.ua {
+section.sect-2.ua, section.sect-4.ua {
   background-color: #faf0dc;
+}
+section.sect-2.pl, section.sect-4.pl {
+  background-color: #FFA9A9;
 }
 section img {
   width: 100%;
