@@ -50,11 +50,7 @@ a.bm-item.menu-item {
   background-color: transparent;
   color: white;
 }
-ul.nav li {
-  background: #d9deee;
-  padding: 10px;
-  margin-right: 10px;
-}
+
 li.hamburger {
   background-color: #00229a;
   padding: 14px 15px;
@@ -99,8 +95,8 @@ ul.bm-item.nav {
   /* max-width: 20%; */
   margin-top: 0px;
   position: absolute;
-  top: 20px;
-  right: 67px;
+  top: 26px;
+  right: 76px;
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -149,7 +145,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: fixed;
   height: 100%;
   width: 100% !important;
-
   left: 0px;
   top: 0px;
 }
@@ -167,10 +162,15 @@ ul.nav li a.menu-item {
 /* General sidebar styles */
 .bm-menu {
   background: #00229a;
-  padding: 3.5em 1.5em 0;
+
   font-size: 1.15em;
 }
-
+nav.bm-item-list {
+  max-width: 95%;
+}
+a.bm-item.menu-item {
+  max-width: 360px;
+}
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;

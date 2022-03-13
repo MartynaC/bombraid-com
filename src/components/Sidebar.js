@@ -6,9 +6,9 @@ export default (props) => {
     <Menu>
     
        <ul className="nav">
-                <li><a href="/index.html">PL</a></li>
-                <li><a href="/products/product-1.html">RU</a></li>
-                <li><a href="/contact.html">UA</a></li>
+                <li><a href="/">PL</a></li>
+                <li><a href="/ru">RU</a></li>
+                <li><a href="/ua">UA</a></li>
               </ul>
       <a className="menu-item" href="#sec1">
         ГРАЖДАНE УКРАИНЬI!
