@@ -366,6 +366,9 @@ div.react_lightgallery_item {
   body {
     padding-top: 0%;
   }
+  header {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 501px) {
