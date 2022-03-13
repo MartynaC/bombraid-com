@@ -2,6 +2,7 @@ import "./App.css";
 import Menu from "./components/Menu.js";
 import BackToTop from "./components/BackToTop.js";
 import { LightgalleryItem } from "react-lightgallery";
+import { Routes, Route, Link } from "react-router-dom";
 import lupka from "./img/lupka.svg";
 import bomba from "./img/bomb.svg";
 import asset1 from "./img/asset1.svg";
@@ -23,10 +24,30 @@ import pdf from "./pdf/Final_КАК-УКРЕПИТЬ-ПОДВАЛ.pdf";
 
 function App() {
   return (
+    
     <div className="App">
-      <header>
+   
+       <Routes>
+        <Route path="/" element={<PL />} />
+        <Route path="ru" element={<RU />} />
+        <Route path="ua" element={<UA />} />
+      </Routes>
+    
+     
+    
+    </div>
+  );
+}
+function PL() {
+  return (
+    <>
+     
+      <nav>
+        <Link to="/">PL</Link>
+        <Link to="/ru">RU</Link>
+        <Link to="/ua">UA</Link>
         <Menu right />
-      </header>
+      </nav>
       <section className="sect-1">
         <h1>
           КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
@@ -280,7 +301,101 @@ function App() {
           </div>
         </div>
       </section>
-    </div>
+    </>
+  );
+}
+
+function RU() {
+  return (
+    <>
+       <nav>
+      <Link to="/">PL</Link>
+        <Link to="/ru">RU</Link>
+        <Link to="/ua">UA</Link>
+        <Menu />
+      </nav>   
+      <section className="sect-1">
+      <h1>
+        КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
+      </h1>
+       </section>
+      <section className="sect-2">
+        <div
+          style={{
+            width: "100%",
+            display: "inline-flex",
+          }}
+        >
+          <div style={{ width: "60%" }}>
+            <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
+          </div>
+          <div className="bomb-image" style={{ width: "40%" }}>
+            <img
+              src={bomba}
+              alt=""
+            />
+          </div>
+        </div>
+        <br />
+        <button className="button">завантажити pdf</button>
+        <br />
+        <br />
+        <br />
+        <h2 id="sec1">ГРАЖДАНE УКРАИНЬI!</h2>
+        <br />
+        <p className="bodyM">
+          Это пособие соэдано для того, чтобы объяснить вам, как подготовить
+          свой подвал к воэдушной и артилле рийской атаке.
+          <br /> Самьıй лучший способ защитить себя и своих близких – укрьıться
+          в безопасном месте. Такими местами являются: углубленные подвал и
+          полуподвал.
+        </p>
+        <br />
+        <h1>Любого жилого дома!</h1>
+        <br />
+        <p className="bodyM">
+          Однако для этого они требуют специальной подготовки.
+          <br /> В этом пособии мы расскажем как это сделать самым простым
+          способом.
+        </p>
+        <br />
+        <h2>УКРЬIТИЯ ПРЕДНАЭНАЧЕНЬI ДЛЯ ЭАЩИТЬI ОТ</h2>
+        <br />
+        <p className="bodyM">
+          <ul>
+            {" "}
+            <li>Осколков авиабомб и артиллерийских снарядов </li>
+            <li>Взрывной волны авиабом и артcнарядов </li>
+            <li>Обрушений и завалов зданий и их фрагментов</li>
+          </ul>
+        </p>
+        <br />
+        <p className="bodyM">
+          <strong>Если у вас вьістающий над грунтом полуподвал</strong>
+          <br />– То его необходимо укрепить снаружи (как минимум окна) <br />
+          <br />
+          <strong>Также в каждом подвале и полуподвале</strong>
+          <br />– Необходимо укрепить потолок
+        </p>
+        <br />
+        <p className="bodyM">Перейдем к конкретным шагам.</p>
+        <br />
+      </section>
+    </>
+  );
+}
+function UA() {
+  return (
+    <>
+      <nav>
+      <Link to="/">PL</Link>
+        <Link to="/ru">RU</Link>
+        <Link to="/ua">UA</Link>
+        <Menu />
+      </nav>
+ 
+
+    </>
   );
 }
 
