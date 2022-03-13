@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
+import "lightgallery.js/dist/css/lightgallery.css";
+import { LightgalleryProvider } from "react-lightgallery";
 
 ReactDOM.render(
   <React.StrictMode>
+    <LightgalleryProvider>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
+      </LightgalleryProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
