@@ -133,40 +133,61 @@ function PL() {
           досок перед ним
         </p>
         <br />
-        <img src={asset2} alt="" />
+        <LightgalleryItem src={asset2}>
+          <img src={asset2} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
         <strong>ВАРИАНТ 2: Мешки с песком</strong>
         <br />
         <br />
-        <img src={asset3} alt="" />
+        <LightgalleryItem src={asset3}>
+          <img src={asset3} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
-        <img src={asset4} alt="" />
+        <LightgalleryItem src={asset4}>
+          <img src={asset4} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <p className="bodyM">
           Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
           сторон досками и засыпать пространство между ними.
         </p>
         <br />
-        <img src={asset5} alt="" />
+        <LightgalleryItem src={asset5}>
+          <img src={asset5} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
         <hr />
         <br />
         <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
         <br />
-        <img src={asset6} alt="" />
+        <LightgalleryItem src={asset6}>
+          <img src={asset6} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
         <hr />
         <br />
         <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
         <br />
-        <img src={asset7} alt="" />
+        <LightgalleryItem src={asset7}>
+          <img src={asset7} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <p className="bodyM">Обваловка мешками с песком и кругляками</p>
         <br />
-        <img src={asset8} alt="" />
+        <LightgalleryItem src={asset8}>
+          <img src={asset8} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <p className="bodyM">Обваловка грунтом</p>
         <br />
@@ -175,7 +196,10 @@ function PL() {
         <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
         <p className="bodyM">Необходимо на случай обрушения здания.</p>
         <br />
-        <img src={asset9} alt="" />
+        <LightgalleryItem src={asset9}>
+          <img src={asset9} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <p className="bodyM">
           Не смотря на кажущуюся сложность, укрепление потолка является важным
@@ -192,11 +216,20 @@ function PL() {
           волну ядерного взрыва)
         </p>
         <br />
-        <img src={asset10} alt="" />
+        <LightgalleryItem src={asset10}>
+          <img src={asset10} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
-        <img src={asset11} alt="" />
+        <LightgalleryItem src={asset11}>
+          <img src={asset11} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
-        <img src={asset12} alt="" />
+        <LightgalleryItem src={asset12}>
+          <img src={asset12} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
         <hr />
@@ -206,7 +239,10 @@ function PL() {
           ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
         </h2>
         <br />
-        <img src={asset13} alt="" />
+        <LightgalleryItem src={asset13}>
+          <img src={asset13} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <p className="bodyM">
           Для скрепления древесины можно использовать крепеж с саморезами либо
@@ -219,10 +255,16 @@ function PL() {
         <br />
         <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
         <br />
-        <img src={asset14} alt="" />
+        <LightgalleryItem src={asset14}>
+          <img src={asset14} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
-        <img src={asset15} alt="" />
+        <LightgalleryItem src={asset15}>
+          <img src={asset15} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
         <br />
         <br />
         <br />

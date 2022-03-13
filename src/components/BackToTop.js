@@ -5,7 +5,7 @@ export default class BackToTop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      is_visible: true,
+      is_visible: false,
     };
   }
 
@@ -17,9 +17,15 @@ export default class BackToTop extends Component {
   }
 
   toggleVisibility() {
-    this.setState({
-      is_visible: true,
-    });
+    if (window.pageYOffset > 300) {
+      this.setState({
+        is_visible: true,
+      });
+    } else {
+      this.setState({
+        is_visible: false,
+      });
+    }
   }
 
   scrollToTop() {
@@ -35,7 +41,7 @@ export default class BackToTop extends Component {
       <div className="scroll-to-top">
         {is_visible && (
           <div onClick={() => this.scrollToTop()}>
-            <img src={arrow} alt="Go to top" />
+            <img style={{ border: "none" }} src={arrow} alt="Go to top" />
           </div>
         )}
       </div>

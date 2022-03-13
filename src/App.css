@@ -343,6 +343,10 @@ div.lg-toolbar.lg-group {
   text-align: center !important;
 }
 
+div.lg-thumb-outer.lg-grab {
+  display: none;
+}
+
 #lg-counter {
   display: none !important;
 }
@@ -370,14 +374,12 @@ div.react_lightgallery_item {
   border-style: none;
 }
 .scroll-to-top {
-  position: relative;
-  width: 30%;
-  border-style: none;
-  margin-top: 14%;
-  margin-left: 60%;
-  padding-bottom: 30px;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
 }
 
+/* na telefony */
 @media only screen and (max-width: 500px) {
   .App {
     width: 100%;
