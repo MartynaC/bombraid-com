@@ -273,9 +273,9 @@ function App() {
               Martyna & Adrien <br />
               Walery Butewicz
             </p>
+            <BackToTop />
           </div>
         </div>
-        <BackToTop />
       </section>
     </div>
   );

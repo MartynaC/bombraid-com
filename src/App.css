@@ -335,8 +335,9 @@ div.react_lightgallery_item {
 }
 .scroll-to-top {
   position: relative;
-  bottom: 2%;
-  right: 0%;
-  width: 15%;
+  width: 30%;
   border-style: none;
+  margin-top: 14%;
+  margin-left: 60%;
+  padding-bottom: 30px;
 }
