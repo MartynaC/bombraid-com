@@ -167,7 +167,7 @@ ul.nav li a.menu-item {
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  display: none;
 }
 /* Individual item */
 .bm-item {

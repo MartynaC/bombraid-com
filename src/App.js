@@ -19,6 +19,7 @@ import asset12 from "./img/Asset12.svg";
 import asset13 from "./img/Asset13.svg";
 import asset14 from "./img/Asset14.svg";
 import asset15 from "./img/Asset15.svg";
+import pdf from "./pdf/Final_КАК-УКРЕПИТЬ-ПОДВАЛ.pdf";
 
 function App() {
   return (
@@ -46,7 +47,9 @@ function App() {
           </div>
         </div>
         <br />
-        <button className="button">завантажити pdf</button>
+        <a href={pdf} download>
+          <button className="button">завантажити pdf</button>
+        </a>
         <br />
         <br />
         <br />
