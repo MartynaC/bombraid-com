@@ -1,7 +1,9 @@
 import "./App.css";
-import bomba from "./img/bomb.svg";
 import Menu from "./components/Menu.js";
+import BackToTop from "./components/BackToTop.js";
 import { LightgalleryItem } from "react-lightgallery";
+import lupka from "./img/lupka.svg";
+import bomba from "./img/bomb.svg";
 import asset1 from "./img/asset1.svg";
 import asset2 from "./img/Asset2.svg";
 import asset3 from "./img/Asset3.svg";
@@ -18,20 +20,17 @@ import asset13 from "./img/Asset13.svg";
 import asset14 from "./img/Asset14.svg";
 import asset15 from "./img/Asset15.svg";
 
-
-
-
 function App() {
   return (
     <div className="App">
       <header>
         <Menu right />
       </header>
-       <section className="sect-1">
-      <h1>
-        КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
-      </h1>
-       </section>
+      <section className="sect-1">
+        <h1>
+          КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
+        </h1>
+      </section>
       <section className="sect-2">
         <div
           style={{
@@ -43,10 +42,7 @@ function App() {
             <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
           </div>
           <div className="bomb-image" style={{ width: "40%" }}>
-            <img
-              src={bomba}
-              alt=""
-            />
+            <img src={bomba} alt="" />
           </div>
         </div>
         <br />
@@ -95,117 +91,118 @@ function App() {
         <br />
       </section>
       <section className="sect-3">
-      <h2>ЭАЩИТА ОКОН</h2>
-      <p className="bodyM">
-        Окна являются самой слабой частью подвала и полуподвала, а потому
-        необходимо их заложить следующим образом:
-      </p>
-      <br />
-      <strong>ВАРИАНТ 1: Мешки с песком</strong>
-      <br />
-      <br />
-      <LightgalleryItem src={asset1}>
-      <img src={asset1} alt="" />
-       </LightgalleryItem>
-      <p className="bodyM">
-        20-60-20 зто условные величины показывающие соотношение окна и краёв
-        досок перед ним
-      </p>
-      <br />
-          <img src={asset2} alt="" />
-      <br />
-      <br />
-      <strong>ВАРИАНТ 2: Мешки с песком</strong>
-      <br />
-      <br />
-           <img src={asset3} alt="" />
-      <br />
-            <img src={asset4} alt="" />
-      <br />
-      <p className="bodyM">
-        Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
-        сторон досками и засыпать пространство между ними.
-      </p>
-      <br />
-            <img src={asset5} alt="" />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
-      <br />
-      <img src={asset6} alt="" />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
-      <br />
-      <img src={asset7} alt="" />
-      <br />
-      <p className="bodyM">Обваловка мешками с песком и кругляками</p>
-      <br />
-      <img src={asset8} alt="" />
-      <br />
-      <p className="bodyM">Обваловка грунтом</p>
-      <br />
-      <hr />
-      <br />
-      <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
-      <p className="bodyM">Необходимо на случай обрушения здания.</p>
-      <br />
-      <img src={asset9} alt="" />
-      <br />
-      <p className="bodyM">
-        Не смотря на кажущуюся сложность, укрепление потолка является важным
-        этапом усиления конструкции подвала. Необязательно выполнять его один в
-        один с представленной схемой.
-        <br /> <br /> Каркас на этой схеме рассчитан с запасом на особые
-        нагрузки, поэтому для защиты от бомб и артиллерии достаточно укрепить
-        потолок следуя схеме хотя бы приблизительно.
-      </p>
-      <br />
-      <br />
-      <p className="bodyS">
-        (Схема взята из методички 1966 г. по ГО, поэтому каркас рассчитан и на
-        волну ядерного взрыва)
-      </p>
-      <br />
-      <img src={asset10} alt="" />
-      <br />
-      <img src={asset11} alt="" />
-      <br />
-      <img src={asset12} alt="" />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <h2>
-        В СЛУЧАЕ ДЕФИЦИТА ВРЕМЕНИ И МАТЕРИАЛОВ МОЖНО ОБОЙТИСЬ БЕЗ БРУСЬЕВ,
-        ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
-      </h2>
-      <br />
-      <img src={asset13} alt="" />
-      <br />
-      <p className="bodyM">
-        Для скрепления древесины можно использовать крепеж с саморезами либо
-        скобы для дерева
-      </p>
-      <strong>Помните – окна и потолок самое главное для укрепления!</strong>
-      <br />
-      <br />
-      <hr />
-      <br />
-      <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
-      <br />
-      <img src={asset14} alt="" />
-      <br />
-      <br />
-      <img src={asset15} alt="" />
-      <br />
-      <br />
-      <br />
-    </section>
+        <h2>ЭАЩИТА ОКОН</h2>
+        <p className="bodyM">
+          Окна являются самой слабой частью подвала и полуподвала, а потому
+          необходимо их заложить следующим образом:
+        </p>
+        <br />
+        <strong>ВАРИАНТ 1: Мешки с песком</strong>
+        <br />
+        <br />
+        <LightgalleryItem src={asset1}>
+          <img src={asset1} alt="" />
+          <img className="lupka" src={lupka} alt="" />
+        </LightgalleryItem>
+        <p className="bodyM">
+          20-60-20 зто условные величины показывающие соотношение окна и краёв
+          досок перед ним
+        </p>
+        <br />
+        <img src={asset2} alt="" />
+        <br />
+        <br />
+        <strong>ВАРИАНТ 2: Мешки с песком</strong>
+        <br />
+        <br />
+        <img src={asset3} alt="" />
+        <br />
+        <img src={asset4} alt="" />
+        <br />
+        <p className="bodyM">
+          Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
+          сторон досками и засыпать пространство между ними.
+        </p>
+        <br />
+        <img src={asset5} alt="" />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
+        <br />
+        <img src={asset6} alt="" />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
+        <br />
+        <img src={asset7} alt="" />
+        <br />
+        <p className="bodyM">Обваловка мешками с песком и кругляками</p>
+        <br />
+        <img src={asset8} alt="" />
+        <br />
+        <p className="bodyM">Обваловка грунтом</p>
+        <br />
+        <hr />
+        <br />
+        <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
+        <p className="bodyM">Необходимо на случай обрушения здания.</p>
+        <br />
+        <img src={asset9} alt="" />
+        <br />
+        <p className="bodyM">
+          Не смотря на кажущуюся сложность, укрепление потолка является важным
+          этапом усиления конструкции подвала. Необязательно выполнять его один
+          в один с представленной схемой.
+          <br /> <br /> Каркас на этой схеме рассчитан с запасом на особые
+          нагрузки, поэтому для защиты от бомб и артиллерии достаточно укрепить
+          потолок следуя схеме хотя бы приблизительно.
+        </p>
+        <br />
+        <br />
+        <p className="bodyS">
+          (Схема взята из методички 1966 г. по ГО, поэтому каркас рассчитан и на
+          волну ядерного взрыва)
+        </p>
+        <br />
+        <img src={asset10} alt="" />
+        <br />
+        <img src={asset11} alt="" />
+        <br />
+        <img src={asset12} alt="" />
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>
+          В СЛУЧАЕ ДЕФИЦИТА ВРЕМЕНИ И МАТЕРИАЛОВ МОЖНО ОБОЙТИСЬ БЕЗ БРУСЬЕВ,
+          ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
+        </h2>
+        <br />
+        <img src={asset13} alt="" />
+        <br />
+        <p className="bodyM">
+          Для скрепления древесины можно использовать крепеж с саморезами либо
+          скобы для дерева
+        </p>
+        <strong>Помните – окна и потолок самое главное для укрепления!</strong>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
+        <br />
+        <img src={asset14} alt="" />
+        <br />
+        <br />
+        <img src={asset15} alt="" />
+        <br />
+        <br />
+        <br />
+      </section>
       <section className="sect-4">
         <br />
         <br />
@@ -220,12 +217,11 @@ function App() {
             придётся разгребать завал изнутри помогая спасателям ДСНС
           </li>
           <li className="bodyM">
-            {" "}
-            Возьмите пару огнетушителей на случай возникновения пожара{" "}
+            Возьмите пару огнетушителей на случай возникновения пожара
           </li>
           <li className="bodyM">
             Если нет вентиляционных каналов, оставьте небольшие проемы в заделке
-            окон (не более 5 см толщиной){" "}
+            окон (не более 5 см толщиной)
           </li>
           <li className="bodyM">
             В укрытии вам придётся провести много времени, а потому подготовьте
@@ -269,8 +265,8 @@ function App() {
               <br /> Польша 2022
             </p>
           </div>
-          <div style={{ width: "50%", paddingRight: "20px" }}>
-            <p className="bodyS" style={{ textAlign: "left" }}>
+          <div style={{ width: "50%", float: "right" }}>
+            <p className="bodyS">
               коллектив Obrona PRO <br />
               Tomasz Czyżkowski <br />
               Janek Mońka <br />
@@ -279,6 +275,7 @@ function App() {
             </p>
           </div>
         </div>
+        <BackToTop />
       </section>
     </div>
   );
