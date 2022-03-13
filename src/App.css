@@ -84,7 +84,7 @@ nav a {
   width: 16px;
   height: 14px;
   margin: auto;
-  top: 3px;
+  top: -0.5px;
 }
 span.bm-burger-bars {
   height: 2.5px !important;
@@ -167,6 +167,7 @@ ul.nav li a.menu-item {
 }
 nav.bm-item-list {
   max-width: 95%;
+  padding-top: 30%;
 }
 a.bm-item.menu-item {
   max-width: 360px;
