@@ -20,44 +20,48 @@ import asset12 from "./img/Asset12.svg";
 import asset13 from "./img/Asset13.svg";
 import asset14 from "./img/Asset14.svg";
 import asset15 from "./img/Asset15.svg";
-import pdf from "./pdf/Final_КАК-УКРЕПИТЬ-ПОДВАЛ.pdf";
-import pdfua from "./pdf/Final_ЯК-ЗМІЦНИТИ-ПІДВАЛ.pdf";
+import pdf from "./pdf/КАК УКРЕПИТЬ ПОДВАЛ.pdf";
+import pdfua from "./pdf/ЯК ЗМІЦНИТИ ПІДВАЛ.pdf";
+import pdfpl from "./pdf/JAK WZMOCNIĆ PIWNICĘ.pdf";
 
 function App() {
   return (
-    
     <div className="App">
-   
-       <Routes>
-        <Route path="/" element={<PL />} />
+      <Routes>
+        <Route path="pl" element={<PL />} />
         <Route path="ru" element={<RU />} />
-        <Route path="ua" element={<UA />} />
+        <Route path="/" element={<UA />} />
       </Routes>
-    
-     
-    
     </div>
   );
 }
 function PL() {
   return (
     <>
-     
       <nav>
-        <NavLink to="/" className={isActive =>
-    "pl" + (!isActive ? " unselected" : "")
-  }>PL</NavLink>
-        <NavLink to="/ru" className={isActive =>
-    "ru" + (!isActive ? " unselected" : "")
-  }>RU</NavLink>
-        <NavLink to="/ua" className={isActive =>
-    "ua" + (!isActive ? " unselected" : "")
-  }>UA</NavLink>
+        <NavLink
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+        >
+          PL
+        </NavLink>
+        <NavLink
+          to="/ru"
+          className={(isActive) => "ru" + (!isActive ? " unselected" : "")}
+        >
+          RU
+        </NavLink>
+        <NavLink
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+        >
+          UA
+        </NavLink>
         <Menu right />
       </nav>
       <section className="sect-1">
         <h1>
-          КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
+          JAK <br /> WZMOCNIĆ <br /> PIWNICĘ
         </h1>
       </section>
       <section className="sect-2 pl">
@@ -68,67 +72,83 @@ function PL() {
           }}
         >
           <div style={{ width: "60%" }}>
-            <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
+            <h3>
+              WSKAZÓWKI DO PRZYGOTOWANIA MIEJSCA UKRYCIA W DOMU MIESZKALNYM
+            </h3>
           </div>
           <div className="bomb-image" style={{ width: "40%" }}>
             <img src={bomba} alt="" />
           </div>
         </div>
         <br />
-        
-          <button className="button">завантажити PDF</button>
-        
+        <a href={pdfpl} download>
+          <button className="button">ściągnij PDF</button>
+        </a>
+
         <br />
         <br />
         <br />
-        <h2 id="sec1">ГРАЖДАНE УКРАИНЬI!</h2>
-        <br />
-        <p className="bodyM">
-          Это пособие соэдано для того, чтобы объяснить вам, как подготовить
-          свой подвал к воэдушной и артилле рийской атаке.
-          <br /> Самьıй лучший способ защитить себя и своих близких – укрьıться
-          в безопасном месте. Такими местами являются: углубленные подвал и
-          полуподвал.
-        </p>
-        <br />
-        <h1>Любого жилого дома!</h1>
+        <h2 id="sec1">OBYWATELE UKRAINY!</h2>
         <br />
         <p className="bodyM">
-          Однако для этого они требуют специальной подготовки.
-          <br /> В этом пособии мы расскажем как это сделать самым простым
-          способом.
+          Ten poradnik został stworzony po to, aby przygotować piwnicę na
+          wypadek ataku powietrznego lub artyleryjskiego.
+          <br /> Najlepszym sposobem ochrony siebie i swoich bliskich jest
+          ukrycie się w bezpiecznym miejscu. Do takich miejsc należą znajdujące
+          się pod ziemią: suterena i piwnica.
         </p>
         <br />
-        <h2>УКРЬIТИЯ ПРЕДНАЭНАЧЕНЬI ДЛЯ ЭАЩИТЬI ОТ</h2>
+        <h1>dowolnego budynku mieszkalnego!</h1>
+        <br />
+        <p className="bodyM">
+          Jednakże potrzebują one specjalnego przygotowania.
+          <br /> W tym poradniku opowiemy jak to zrobić w najprostszy sposób.
+        </p>
+        <br />
+        <h2>MIEJSCA UKRYCIA PRZEZNACZONE SĄ DO OBRONY PRZED:</h2>
         <br />
         <p className="bodyM">
           <ul>
             {" "}
-            <li>Осколков авиабомб и артиллерийских снарядов </li>
-            <li>Взрывной волны авиабом и артcнарядов </li>
-            <li>Обрушений и завалов зданий и их фрагментов</li>
+            <li>Odłamkami bomb lotniczych i pocisków artyleryjskich </li>
+            <li>Falą uderzeniową bomb lotniczych i pocisków artyleryjskich </li>
+            <li>
+              Naruszeniem konstrukcji lub zawaleniem się budynków lub ich części
+            </li>
           </ul>
         </p>
         <br />
         <p className="bodyM">
-          <strong>Если у вас вьістающий над грунтом полуподвал</strong>
-          <br />– То его необходимо укрепить снаружи (как минимум окна) <br />
+          <strong>
+            Jeśli suterena budynku mieszkalnego wystaje ponad poziom gruntu,
+          </strong>
           <br />
-          <strong>Также в каждом подвале и полуподвале</strong>
-          <br />– Необходимо укрепить потолок
+          to konieczne jest jej wzmocnienie z zewnątrz (co najmniej do wysokości
+          okien).
+          <br />
+          <br />
+          <strong>Oprócz tego w każdej piwnicy bądź suterenie</strong>
+          <br />
+          konieczne jest wzmocnienie sufitu.
         </p>
         <br />
-        <p className="bodyM">Перейдем к конкретным шагам.</p>
+        <p className="bodyM">
+          Na miejsca ukrycia nadają się piwnice i sutereny budynków typu
+          chruszczowka, z wielkiej płyty a także nowego budownictwa.
+          <br />
+          <br />
+          <br /> Przejdźmy do konkretnych rozwiązań
+        </p>
         <br />
       </section>
       <section className="sect-3">
-        <h2>ЭАЩИТА ОКОН</h2>
+        <h2>OCHRONA OKIEN</h2>
         <p className="bodyM">
-          Окна являются самой слабой частью подвала и полуподвала, а потому
-          необходимо их заложить следующим образом:
+          Okna są najsłabszą częścią piwnicy lub sutereny, dlatego należy je
+          zabezpieczyć w następujący sposób
         </p>
         <br />
-        <strong>ВАРИАНТ 1: Мешки с песком</strong>
+        <strong>WARIANT 1: Worki z piaskiem</strong>
         <br />
         <br />
         <LightgalleryItem src={asset1}>
@@ -136,8 +156,8 @@ function PL() {
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <p className="bodyM">
-          20-60-20 зто условные величины показывающие соотношение окна и краёв
-          досок перед ним
+          20-60-20 to umowne wielkości pokazujące wzajemną zależność okna i
+          brzegów desek przed nim
         </p>
         <br />
         <LightgalleryItem src={asset2}>
@@ -146,7 +166,7 @@ function PL() {
         </LightgalleryItem>
         <br />
         <br />
-        <strong>ВАРИАНТ 2: Мешки с песком</strong>
+        <strong>WARIANT 2: obłożenie ziemią</strong>
         <br />
         <br />
         <LightgalleryItem src={asset3}>
@@ -160,8 +180,15 @@ function PL() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-          Кроме мешков с песком / обсыпки необходимо также закрыть окна с двух
-          сторон досками и засыпать пространство между ними.
+          Jeśli nie ma worków z piaskiem to okna można zasypać ziemią na
+          wysokość minimum 75 cm.
+          <br />
+          <br />
+          Ścisnąć okno z dwóch stron za pomocą desek połączonych ze sobą drutem
+          lub sznurkiem
+          <br />
+          <br />
+          Deski (3-4cm)
         </p>
         <br />
         <LightgalleryItem src={asset5}>
@@ -332,7 +359,8 @@ function PL() {
           <div style={{ width: "50%" }}>
             <p className="bodyS">
               Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
-              Разработка: <br />  <br />Перевод:
+              Разработка: <br /> <br />
+              Перевод:
               <br />
               <br />
               <br /> Польша 2022
@@ -357,23 +385,32 @@ function PL() {
 function RU() {
   return (
     <>
-       <nav>
-      <NavLink to="/" className={isActive =>
-    "pl" + (!isActive ? " unselected" : "")
-  }>PL</NavLink>
-        <NavLink to="/ru" className={isActive =>
-    "ru" + (!isActive ? " unselected" : "")
-  }>RU</NavLink>
-        <NavLink to="/ua" className={isActive =>
-    "ua" + (!isActive ? " unselected" : "")
-  }>UA</NavLink>
+      <nav>
+        <NavLink
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+        >
+          PL
+        </NavLink>
+        <NavLink
+          to="/ru"
+          className={(isActive) => "ru" + (!isActive ? " unselected" : "")}
+        >
+          RU
+        </NavLink>
+        <NavLink
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+        >
+          UA
+        </NavLink>
         <Menu />
-      </nav>   
+      </nav>
       <section className="sect-1">
-      <h1>
-        КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
-      </h1>
-       </section>
+        <h1>
+          КАК <br /> УКРЕПИТЬ <br /> ПОДВАЛ
+        </h1>
+      </section>
       <section className="sect-2 ru">
         <div
           style={{
@@ -385,10 +422,7 @@ function RU() {
             <h3>РЕКОМЕНДАЦИИ ПО ПОДГОТОВКЕ УКРЬIТИЯ В ЖИЛОМ ДОМЕ</h3>
           </div>
           <div className="bomb-image" style={{ width: "40%" }}>
-            <img
-              src={bomba}
-              alt=""
-            />
+            <img src={bomba} alt="" />
           </div>
         </div>
         <br />
@@ -435,8 +469,10 @@ function RU() {
           <br />– Необходимо укрепить потолок
         </p>
         <br />
-        <p className="bodyM">Для обустройства укрытий
-подойдут подвалы и полуподвалы хрущевок и панельных зданий, а также новостроек.</p>
+        <p className="bodyM">
+          Для обустройства укрытий подойдут подвалы и полуподвалы хрущевок и
+          панельных зданий, а также новостроек.
+        </p>
         <br />
       </section>
       <section className="sect-3 ru">
@@ -647,10 +683,11 @@ function RU() {
             display: "inline-flex",
           }}
         >
-           <div style={{ width: "50%" }}>
+          <div style={{ width: "50%" }}>
             <p className="bodyS">
               Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
-              Разработка: <br />  <br />Перевод:
+              Разработка: <br /> <br />
+              Перевод:
               <br />
               <br />
               <br /> Польша 2022
@@ -675,24 +712,34 @@ function UA() {
   return (
     <>
       <nav>
-      <NavLink to="/" className={isActive =>
-    "pl" + (!isActive ? " unselected" : "")
-  }>PL</NavLink>
-        <NavLink to="/ru" className={isActive =>
-    "ru" + (!isActive ? " unselected" : "")
-  }>RU</NavLink>
-        <NavLink to="/ua" className={isActive =>
-    "ua" + (!isActive ? " unselected" : "")
-  }>UA</NavLink>
+        <NavLink
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+        >
+          PL
+        </NavLink>
+        <NavLink
+          to="/ru"
+          className={(isActive) => "ru" + (!isActive ? " unselected" : "")}
+        >
+          RU
+        </NavLink>
+        <NavLink
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+        >
+          UA
+        </NavLink>
         <Menu />
       </nav>
- 
+
       <section className="sect-1">
-      <h1>
-      ЯК  <br />ЗМІЦНИТИ <br />  ПІДВАЛ
-      </h1>
-       </section>
-       <section className="sect-2 ua">
+        <h1>
+          ЯК <br />
+          ЗМІЦНИТИ <br /> ПІДВАЛ
+        </h1>
+      </section>
+      <section className="sect-2 ua">
         <div
           style={{
             width: "100%",
@@ -703,66 +750,71 @@ function UA() {
             <h3>РЕКОМЕНДАЦІЇ ЩОДО ПРИГОТУВАННЯ УКРИТТЯ У ЖИТЛОВОМУ БУДИНКУ</h3>
           </div>
           <div className="bomb-image" style={{ width: "40%" }}>
-            <img
-              src={bomba}
-              alt=""
-            />
+            <img src={bomba} alt="" />
           </div>
         </div>
         <br />
         <a href={pdfua} download>
-        <button className="button">завантажити PDF</button>
+          <button className="button">завантажити PDF</button>
         </a>
-      
+
         <br />
         <br />
         <br />
         <h2 id="sec1">ГРОМАДЯНИ УКРАЇНИ!</h2>
         <br />
         <p className="bodyM">
-        Цей посібник створено для того, щоб пояснити вам, як підготувати свій підвал до повітряної атаки та артобстрілу.
-        <br />
-        Найкращий спосіб захистити себе і своїх близьких – це сховатися в безпечному місці. Такими місцями є: вглиблений підвал та напівпідвал.
+          Цей посібник створено для того, щоб пояснити вам, як підготувати свій
+          підвал до повітряної атаки та артобстрілу.
+          <br />
+          Найкращий спосіб захистити себе і своїх близьких – це сховатися в
+          безпечному місці. Такими місцями є: вглиблений підвал та напівпідвал.
         </p>
         <br />
         <h1>будь-якого житлового будинку!</h1>
         <br />
         <p className="bodyM">
-        Проте для цього вони вимагають спеціального облаштування.
-          <br /> У цьому посібнику ми пояснимо вам, як це зробити у найпростіший спосіб.
+          Проте для цього вони вимагають спеціального облаштування.
+          <br /> У цьому посібнику ми пояснимо вам, як це зробити у найпростіший
+          спосіб.
         </p>
         <br />
-        <h2>УКРИТТЯ ПРИЗНАЧЕННІ
-ДЛЯ ЗАХИСТУ ВІД:</h2>
+        <h2>УКРИТТЯ ПРИЗНАЧЕННІ ДЛЯ ЗАХИСТУ ВІД:</h2>
         <br />
         <p className="bodyM">
           <ul>
             {" "}
-            <li> Уламків авіабомб та артснарядів  </li>
+            <li> Уламків авіабомб та артснарядів </li>
             <li>Вибухової хвилі авіабомб та артснарядів</li>
             <li>Обвалів та завалів будівель та їхніх окремих елементів</li>
           </ul>
         </p>
         <br />
         <p className="bodyM">
-         
-
-
-          <strong>Якщо у вас напівпідвал, частина якого вистає над землею,</strong>
-          <strong><br />то його необхідно укріпити зовні (як мінімум вікна). <br /></strong>
+          <strong>
+            Якщо у вас напівпідвал, частина якого вистає над землею,
+          </strong>
+          <strong>
+            <br />
+            то його необхідно укріпити зовні (як мінімум вікна). <br />
+          </strong>
           <br />
           <strong>Також у кожному підвалі та</strong>
-          <br /><strong>напівпідвалі необхідно зміцнити стелю.</strong>
-          
+          <br />
+          <strong>напівпідвалі необхідно зміцнити стелю.</strong>
         </p>
         <br />
-        <p className="bodyM">Для облаштування укриття підійдуть підвали та напівпідвали хрущовок та панельних будинків, а також новобудов.</p>
+        <p className="bodyM">
+          Для облаштування укриття підійдуть підвали та напівпідвали хрущовок та
+          панельних будинків, а також новобудов.
+        </p>
         <br />
       </section>
       <section className="sect-3 ua">
         <h2>ЗАХИСТ ВІКОН</h2>
         <p className="bodyM">
-        Вікна – це найслабкіша частина підвалу та напівпідвалу, тож їх необхідно закласти наступним чином:
+          Вікна – це найслабкіша частина підвалу та напівпідвалу, тож їх
+          необхідно закласти наступним чином:
         </p>
         <br />
         <strong>ВАРІАНТ 1: Мішки з піском</strong>
@@ -773,7 +825,8 @@ function UA() {
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <p className="bodyM">
-        20-60-20 це умовні величини, що показують співвідношення вікна і країв дощок перед ним
+          20-60-20 це умовні величини, що показують співвідношення вікна і країв
+          дощок перед ним
         </p>
         <br />
         <LightgalleryItem src={asset2}>
@@ -796,7 +849,8 @@ function UA() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-        Крім мішків з піском/обвалування землею, також необхідно з обох боків закрити вікна дошками та засипати простір між ними.
+          Крім мішків з піском/обвалування землею, також необхідно з обох боків
+          закрити вікна дошками та засипати простір між ними.
         </p>
         <br />
         <LightgalleryItem src={asset5}>
@@ -844,14 +898,18 @@ function UA() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-        конструкції підвалу. Не обов'язково зміцнювати її один в один за схемою на зображенні.
-          <br /> <br />Каркас на цій схемі розрахований на особливі навантаження, тому для захисту від бомб та артилерії достатньо зміцнити стелю хоча б приблизно взоруючись на цій схемі.
-        
+          конструкції підвалу. Не обов'язково зміцнювати її один в один за
+          схемою на зображенні.
+          <br /> <br />
+          Каркас на цій схемі розрахований на особливі навантаження, тому для
+          захисту від бомб та артилерії достатньо зміцнити стелю хоча б
+          приблизно взоруючись на цій схемі.
         </p>
         <br />
         <br />
         <p className="bodyS">
-        (Схема походить з методички по Цивільній Обороні з 1966 р., тому каркас також розрахований на хвилю ядерного вибуху.)
+          (Схема походить з методички по Цивільній Обороні з 1966 р., тому
+          каркас також розрахований на хвилю ядерного вибуху.)
         </p>
         <br />
         <LightgalleryItem src={asset10}>
@@ -873,7 +931,8 @@ function UA() {
         <hr />
         <br />
         <h2>
-        У РАЗІ ВІДСУТНОСТІ ЧАСУ ТА МАТЕРІАЛІВ МОЖНА ОБІЙТИСЯ БЕЗ БРУСІВ, ПІДПИРАЮЧИ СТЕЛЮ БЕЗПОСЕРЕДНЬО НА БАЛКАХ
+          У РАЗІ ВІДСУТНОСТІ ЧАСУ ТА МАТЕРІАЛІВ МОЖНА ОБІЙТИСЯ БЕЗ БРУСІВ,
+          ПІДПИРАЮЧИ СТЕЛЮ БЕЗПОСЕРЕДНЬО НА БАЛКАХ
         </h2>
         <br />
         <LightgalleryItem src={asset13}>
@@ -882,8 +941,8 @@ function UA() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-         
-Для скріплення деревини можна використовувати шурупи або скоби для дерева.
+          Для скріплення деревини можна використовувати шурупи або скоби для
+          дерева.
         </p>
         <strong>Помните – окна и потолок самое главное для укрепления!</strong>
         <br />
@@ -912,31 +971,43 @@ function UA() {
         <h1>ДОДАТКОВА ІНФОРМАЦІЯ</h1>
         <ul>
           <li className="bodyM">
-          Не забудьте забезпечити ваше укриття запасом питної води, їжі та медикаментів
+            Не забудьте забезпечити ваше укриття запасом питної води, їжі та
+            медикаментів
           </li>
           <li className="bodyM">
-          Майте при собі такі інструменти, як: лопати і лом на випадок, якщо доведеться розгрібати завал зсередини допомагаючи рятувальникам Державної Служби з Надзвичайних Ситуацій
+            Майте при собі такі інструменти, як: лопати і лом на випадок, якщо
+            доведеться розгрібати завал зсередини допомагаючи рятувальникам
+            Державної Служби з Надзвичайних Ситуацій
           </li>
           <li className="bodyM">
-          Візьміть кілька вогнегасників на випадок пожежі
+            Візьміть кілька вогнегасників на випадок пожежі
           </li>
           <li className="bodyM">
-          Якщо немає вентиляційних каналів, залиште невеликі отвори в закладених вікнах (не більше 5 cm завтовшки)
+            Якщо немає вентиляційних каналів, залиште невеликі отвори в
+            закладених вікнах (не більше 5 cm завтовшки)
           </li>
           <li className="bodyM">
-          У сховищі вам можливо доведеться провести багато часу, тож облаштуйте його ґрунтовно і хоча б з мінімальним комфортом
+            У сховищі вам можливо доведеться провести багато часу, тож
+            облаштуйте його ґрунтовно і хоча б з мінімальним комфортом
           </li>
           <li className="bodyM">
-          Ще раз звертаємо вашу увагу, що не потрібно зміцнювати стелю ідентично до схематичного зображення. Крок між колонами можна збільшити до 2-3 метрів, а якщо у вас немає часу або достатньої кількості будматеріалів, то стелю можна одразу підперти  балками
+            Ще раз звертаємо вашу увагу, що не потрібно зміцнювати стелю
+            ідентично до схематичного зображення. Крок між колонами можна
+            збільшити до 2-3 метрів, а якщо у вас немає часу або достатньої
+            кількості будматеріалів, то стелю можна одразу підперти балками
           </li>
         </ul>
         <br />
         <hr />
         <br />
         <p className="bodyS">
-        Цей посібник опрацьовано на підставі:
+          Цей посібник опрацьовано на підставі:
           <br />
-          <br /> TECHNICZNE ZASADY PRZYSTOSOWANIA PIWNIC POD BUDYNKAMI NA UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO MINISTERSTWA OBRONY NARODOWEJ INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966 / Технічні правила пристосування підвалів житлових будинків під укриття, Видавництво Міністерства оборони, Інспекторат Цивільної Оборони, Польща, 1966 р.
+          <br /> TECHNICZNE ZASADY PRZYSTOSOWANIA PIWNIC POD BUDYNKAMI NA
+          UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO MINISTERSTWA OBRONY NARODOWEJ
+          INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966 / Технічні правила
+          пристосування підвалів житлових будинків під укриття, Видавництво
+          Міністерства оборони, Інспекторат Цивільної Оборони, Польща, 1966 р.
         </p>
         <br />
         <hr />
@@ -947,10 +1018,11 @@ function UA() {
             display: "inline-flex",
           }}
         >
-         <div style={{ width: "50%" }}>
+          <div style={{ width: "50%" }}>
             <p className="bodyS">
               Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
-              Разработка: <br />  <br />Перевод:
+              Разработка: <br /> <br />
+              Перевод:
               <br />
               <br />
               <br /> Польша 2022
