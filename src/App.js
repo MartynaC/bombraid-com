@@ -180,15 +180,8 @@ function PL() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-          Jeśli nie ma worków z piaskiem to okna można zasypać ziemią na
-          wysokość minimum 75 cm.
-          <br />
-          <br />
-          Ścisnąć okno z dwóch stron za pomocą desek połączonych ze sobą drutem
-          lub sznurkiem
-          <br />
-          <br />
-          Deski (3-4cm)
+          Oprócz worków z piaskiem/obsypania konieczne jest zakrycie okien z
+          dwóch stron deskami i zasypanie przestrzeni między nimi.
         </p>
         <br />
         <LightgalleryItem src={asset5}>
@@ -199,7 +192,9 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
+        <h2>
+          WYPEŁNIENIE OKNA PIWNICY ZNAJDUJĄCEGO SIĘ PONIŻEJ POZIOMU GRUNTU
+        </h2>
         <br />
         <LightgalleryItem src={asset6}>
           <img src={asset6} alt="" />
@@ -209,26 +204,28 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
+        <h2>Obłożenie ścian zewnętrznych</h2>
         <br />
         <LightgalleryItem src={asset7}>
           <img src={asset7} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <p className="bodyM">Обваловка мешками с песком и кругляками</p>
+        <p className="bodyM">Obłożenie workami z piaskiem i okrąglakami </p>
         <br />
         <LightgalleryItem src={asset8}>
           <img src={asset8} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <p className="bodyM">Обваловка грунтом</p>
+        <p className="bodyM">Obłożenie ziemią</p>
         <br />
         <hr />
         <br />
-        <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
-        <p className="bodyM">Необходимо на случай обрушения здания.</p>
+        <h2>Wzmocnienie sufitu</h2>
+        <p className="bodyM">
+          Konieczne w razie naruszenia konstrukcji budynku.
+        </p>
         <br />
         <LightgalleryItem src={asset9}>
           <img src={asset9} alt="" />
@@ -236,18 +233,20 @@ function PL() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-          Не смотря на кажущуюся сложность, укрепление потолка является важным
-          этапом усиления конструкции подвала. Необязательно выполнять его один
-          в один с представленной схемой.
-          <br /> <br /> Каркас на этой схеме рассчитан с запасом на особые
-          нагрузки, поэтому для защиты от бомб и артиллерии достаточно укрепить
-          потолок следуя схеме хотя бы приблизительно.
+          Pomimo pozornych trudności, wzmocnienie sufitu jest ważnym elementem
+          wzmacniającym konstrukcję piwnicy. Nie trzeba wykonać go jeden do
+          jednego zgodnie z przedstawionym schematem.
+          <br /> <br /> Przedstawiona na schemacie konstrukcja została
+          zaprojektowana na wypadek nadzwyczajnych obciążeń, dlatego w celu
+          ochrony przed bombami i artylerią wystarczy wzmocnić sufit w
+          przybliżeniu, postępując według poniższego schematu.
         </p>
         <br />
         <br />
         <p className="bodyS">
-          (Схема взята из методички 1966 г. по ГО, поэтому каркас рассчитан и на
-          волну ядерного взрыва)
+          (Schemat pochodzi ze skryptu obrony cywilnej z roku 1966, dlatego
+          konstrukcja jest obliczona również na falę uderzeniową wybuchu
+          jądrowego)
         </p>
         <br />
         <LightgalleryItem src={asset10}>
@@ -269,8 +268,8 @@ function PL() {
         <hr />
         <br />
         <h2>
-          В СЛУЧАЕ ДЕФИЦИТА ВРЕМЕНИ И МАТЕРИАЛОВ МОЖНО ОБОЙТИСЬ БЕЗ БРУСЬЕВ,
-          ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
+          W PRZYPADKU BRAKU CZASU I MATERIAŁÓW MOŻNA OBEJŚĆ SIĘ BEZ BELEK 12х18
+          cm , OPIERAJĄC SUFIT BEZPOŚREDNIO NA BELKACH 14х22 cm
         </h2>
         <br />
         <LightgalleryItem src={asset13}>
@@ -279,15 +278,17 @@ function PL() {
         </LightgalleryItem>
         <br />
         <p className="bodyM">
-          Для скрепления древесины можно использовать крепеж с саморезами либо
-          скобы для дерева
+          W celu wzmocnienia konstrukcji z drewna można wykorzystać łączniki z
+          wkrętami lub skoble do drewna.
         </p>
-        <strong>Помните – окна и потолок самое главное для укрепления!</strong>
+        <strong>
+          Należy pamiętać, że najważniejsze jest wzmocnienie okien i sufitu!
+        </strong>
         <br />
         <br />
         <hr />
         <br />
-        <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
+        <h2>RYSUNEK POGLĄDOWY PRZEDSTAWIAJĄCY NAJWAŻNIEJSZE ZMIANY</h2>
         <br />
         <LightgalleryItem src={asset14}>
           <img src={asset14} alt="" />
@@ -306,46 +307,46 @@ function PL() {
       <section className="sect-4 pl">
         <br />
         <br />
-        <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
+        <h1>INFORMACJE DODATKOWE</h1>
         <ul>
           <li className="bodyM">
-            Не забудьте обеспечить в вашем укрытии запас питьевой воды, еды и
-            медикаментов
+            Należy pamiętać o zaopatrzeniu miejsca ukrycia w zapas wody pitnej,
+            jedzenia i lekarstw.
           </li>
           <li className="bodyM">
-            Имейте при себе инструмены, такие как лопаты и лом, на случай если
-            придётся разгребать завал изнутри помогая спасателям ДСНС
+            Należy mieć ze sobą narzędzia takie jak łopaty i łom, w razie
+            potrzeby ich wykorzystania w przypadku zawalenia budynku, aby od
+            środka wspomóc pracę służb ratowniczych.
           </li>
           <li className="bodyM">
-            Возьмите пару огнетушителей на случай возникновения пожара
+            Należy posiadać kilka gaśnic na wypadek pożaru.
           </li>
           <li className="bodyM">
-            Если нет вентиляционных каналов, оставьте небольшие проемы в заделке
-            окон (не более 5 см толщиной)
+            Jeśli nie ma kanałów wentylacyjnych, należy zostawić niewielkie
+            szczeliny w zabezpieczeniu okien (o szerokości nie większej niż 5
+            cm).
           </li>
           <li className="bodyM">
-            В укрытии вам придётся провести много времени, а потому подготовьте
-            его основательно и с минимальным (хотя бы каким-то) комфортом{" "}
+            W miejscu ukrycia być może trzeba będzie spędzić dużo czasu, dlatego
+            trzeba przygotować je gruntownie, zachowując jednak choćby namiastkę
+            komfortu.
           </li>
           <li className="bodyM">
-            Напоминаем ещё раз, что потолок не надо укреплять один в один как на
-            схеме, шаг колонн можно увеличить до двух-трех метров если у вас нет
-            времени или достаточного количества стройматериалов, а под потолок
-            ставить сразу балки
+            Przypominamy raz jeszcze, że sufitu nie trzeba wzmacniać dokładnie
+            tak samo jak na schemacie; odległość kolumn można zwiększyć do 2-3
+            metrów jeśli nie ma wystarczająco dużo czasu lub materiałów, a pod
+            sufit można wstawić belki 14х22 cm.
           </li>
         </ul>
         <br />
         <hr />
         <br />
         <p className="bodyS">
-          Данное пособие разработано на основе:
+          Niniejszy poradnik przygotowano na podstawie:
           <br />
           <br /> TECHNICZNE ZASADY PRZYSTOSOWANIA PIWNIC POD BUDYNKAMI NA
           UKRYCIA ZABEZPIECZAJACE, WYDAWNICTWO MINISTERSTWA OBRONY NARODOWEJ
-          INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966 / Технические правила
-          приспособления подвалов жилых домов в простейшие укрытия,
-          издастельство Министерства обороны, Инспекторат гражданской обороны,
-          Польша, 1966 г.
+          INSPEKTORAT POWSZECHNEJ SAMOOBRONY 1966
         </p>
         <br />
         <hr />
@@ -358,12 +359,12 @@ function PL() {
         >
           <div style={{ width: "50%" }}>
             <p className="bodyS">
-              Авторы: <br /> Графический дизайн: <br /> Веб-сайт: <br />{" "}
-              Разработка: <br /> <br />
-              Перевод:
+              Autorzy: <br /> Opracowanie graficzne: <br /> Strona www: <br />
+              Kodowanie: <br /> <br />
+              Tłumaczenie:
               <br />
               <br />
-              <br /> Польша 2022
+              <br /> Polska 2022
             </p>
           </div>
           <div style={{ width: "50%", float: "right" }}>
