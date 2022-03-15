@@ -7,21 +7,55 @@ import { LightgalleryItem } from "react-lightgallery";
 import { Routes, Route, NavLink } from "react-router-dom";
 import lupka from "./img/lupka.svg";
 import bomba from "./img/bomb.svg";
-import asset1 from "./img/asset1.svg";
-import asset2 from "./img/Asset2.svg";
-import asset3 from "./img/Asset3.svg";
-import asset4 from "./img/Asset4.svg";
-import asset5 from "./img/Asset5.svg";
-import asset6 from "./img/Asset6.svg";
-import asset7 from "./img/Asset7.svg";
-import asset8 from "./img/Asset8.svg";
-import asset9 from "./img/Asset9.svg";
-import asset10 from "./img/Asset10.svg";
-import asset11 from "./img/Asset11.svg";
-import asset12 from "./img/Asset12.svg";
-import asset13 from "./img/Asset13.svg";
-import asset14 from "./img/Asset14.svg";
-import asset15 from "./img/Asset15.svg";
+
+import asset1ru from "./img/RU/asset1.svg";
+import asset2ru from "./img/RU/Asset2.svg";
+import asset3ru from "./img/RU/Asset3.svg";
+import asset4ru from "./img/RU/Asset4.svg";
+import asset5ru from "./img/RU/Asset5.svg";
+import asset6ru from "./img/RU/Asset6.svg";
+import asset7ru from "./img/RU/Asset7.svg";
+import asset8ru from "./img/RU/Asset8.svg";
+import asset9ru from "./img/RU/Asset9.svg";
+import asset10ru from "./img/RU/Asset10.svg";
+import asset11ru from "./img/RU/Asset11.svg";
+import asset12ru from "./img/RU/Asset12.svg";
+import asset13ru from "./img/RU/Asset13.svg";
+import asset14ru from "./img/RU/Asset14.svg";
+import asset15ru from "./img/RU/Asset15.svg";
+
+import asset1ua from "./img/ua/asset1.svg";
+import asset2ua from "./img/ua/Asset2.svg";
+import asset3ua from "./img/ua/Asset3.svg";
+import asset4ua from "./img/ua/Asset4.svg";
+import asset5ua from "./img/ua/Asset5.svg";
+import asset6ua from "./img/ua/Asset6.svg";
+import asset7ua from "./img/ua/Asset7.svg";
+import asset8ua from "./img/ua/Asset8.svg";
+import asset9ua from "./img/ua/Asset9.svg";
+import asset10ua from "./img/ua/Asset10.svg";
+import asset11ua from "./img/ua/Asset11.svg";
+import asset12ua from "./img/ua/Asset12.svg";
+import asset13ua from "./img/ua/Asset13.svg";
+import asset14ua from "./img/ua/Asset14.svg";
+import asset15ua from "./img/ua/Asset15.svg";
+
+import asset1pl from "./img/pl/asset1.svg";
+import asset2pl from "./img/pl/Asset2.svg";
+import asset3pl from "./img/pl/Asset3.svg";
+import asset4pl from "./img/pl/Asset4.svg";
+import asset5pl from "./img/pl/Asset5.svg";
+import asset6pl from "./img/pl/Asset6.svg";
+import asset7pl from "./img/pl/Asset7.svg";
+import asset8pl from "./img/pl/Asset8.svg";
+import asset9pl from "./img/pl/Asset9.svg";
+import asset10pl from "./img/pl/Asset10.svg";
+import asset11pl from "./img/pl/Asset11.svg";
+import asset12pl from "./img/pl/Asset12.svg";
+import asset13pl from "./img/pl/Asset13.svg";
+import asset14pl from "./img/pl/Asset14.svg";
+import asset15pl from "./img/pl/Asset15.svg";
+
 import pdf from "./pdf/КАК УКРЕПИТЬ ПОДВАЛ.pdf";
 import pdfua from "./pdf/ЯК ЗМІЦНИТИ ПІДВАЛ.pdf";
 import pdfpl from "./pdf/JAK WZMOCNIĆ PIWNICĘ.pdf";
@@ -153,8 +187,8 @@ function PL() {
         <strong>WARIANT 1: Worki z piaskiem</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset1}>
-          <img src={asset1} alt="" />
+        <LightgalleryItem src={asset1pl}>
+          <img src={asset1pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <p className="bodyM">
@@ -162,8 +196,8 @@ function PL() {
           brzegów desek przed nim
         </p>
         <br />
-        <LightgalleryItem src={asset2}>
-          <img src={asset2} alt="" />
+        <LightgalleryItem src={asset2pl}>
+          <img src={asset2pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -171,13 +205,13 @@ function PL() {
         <strong>WARIANT 2: obłożenie ziemią</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset3}>
-          <img src={asset3} alt="" />
+        <LightgalleryItem src={asset3pl}>
+          <img src={asset3pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset4}>
-          <img src={asset4} alt="" />
+        <LightgalleryItem src={asset4pl}>
+          <img src={asset4pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -186,8 +220,8 @@ function PL() {
           dwóch stron deskami i zasypanie przestrzeni między nimi.
         </p>
         <br />
-        <LightgalleryItem src={asset5}>
-          <img src={asset5} alt="" />
+        <LightgalleryItem src={asset5pl}>
+          <img src={asset5pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -198,8 +232,8 @@ function PL() {
           WYPEŁNIENIE OKNA PIWNICY ZNAJDUJĄCEGO SIĘ PONIŻEJ POZIOMU GRUNTU
         </h2>
         <br />
-        <LightgalleryItem src={asset6}>
-          <img src={asset6} alt="" />
+        <LightgalleryItem src={asset6pl}>
+          <img src={asset6pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -208,15 +242,15 @@ function PL() {
         <br />
         <h2>Obłożenie ścian zewnętrznych</h2>
         <br />
-        <LightgalleryItem src={asset7}>
-          <img src={asset7} alt="" />
+        <LightgalleryItem src={asset7pl}>
+          <img src={asset7pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <p className="bodyM">Obłożenie workami z piaskiem i okrąglakami </p>
         <br />
-        <LightgalleryItem src={asset8}>
-          <img src={asset8} alt="" />
+        <LightgalleryItem src={asset8pl}>
+          <img src={asset8pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -229,8 +263,8 @@ function PL() {
           Konieczne w razie naruszenia konstrukcji budynku.
         </p>
         <br />
-        <LightgalleryItem src={asset9}>
-          <img src={asset9} alt="" />
+        <LightgalleryItem src={asset9pl}>
+          <img src={asset9pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -251,18 +285,18 @@ function PL() {
           jądrowego)
         </p>
         <br />
-        <LightgalleryItem src={asset10}>
-          <img src={asset10} alt="" />
+        <LightgalleryItem src={asset10pl}>
+          <img src={asset10pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset11}>
-          <img src={asset11} alt="" />
+        <LightgalleryItem src={asset11pl}>
+          <img src={asset11pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset12}>
-          <img src={asset12} alt="" />
+        <LightgalleryItem src={asset12pl}>
+          <img src={asset12pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -274,8 +308,8 @@ function PL() {
           cm , OPIERAJĄC SUFIT BEZPOŚREDNIO NA BELKACH 14х22 cm
         </h2>
         <br />
-        <LightgalleryItem src={asset13}>
-          <img src={asset13} alt="" />
+        <LightgalleryItem src={asset13pl}>
+          <img src={asset13pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -292,14 +326,14 @@ function PL() {
         <br />
         <h2>RYSUNEK POGLĄDOWY PRZEDSTAWIAJĄCY NAJWAŻNIEJSZE ZMIANY</h2>
         <br />
-        <LightgalleryItem src={asset14}>
-          <img src={asset14} alt="" />
+        <LightgalleryItem src={asset14pl}>
+          <img src={asset14pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <br />
-        <LightgalleryItem src={asset15}>
-          <img src={asset15} alt="" />
+        <LightgalleryItem src={asset15pl}>
+          <img src={asset15pl} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -488,8 +522,8 @@ function RU() {
         <strong>ВАРИАНТ 1: Мешки с песком</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset1}>
-          <img src={asset1} alt="" />
+        <LightgalleryItem src={asset1ru}>
+          <img src={asset1ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <p className="bodyM">
@@ -497,8 +531,8 @@ function RU() {
           досок перед ним
         </p>
         <br />
-        <LightgalleryItem src={asset2}>
-          <img src={asset2} alt="" />
+        <LightgalleryItem src={asset2ru}>
+          <img src={asset2ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -506,13 +540,13 @@ function RU() {
         <strong>ВАРИАНТ 2: Мешки с песком</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset3}>
-          <img src={asset3} alt="" />
+        <LightgalleryItem src={asset3ru}>
+          <img src={asset3ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset4}>
-          <img src={asset4} alt="" />
+        <LightgalleryItem src={asset4ru}>
+          <img src={asset4ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -521,8 +555,8 @@ function RU() {
           сторон досками и засыпать пространство между ними.
         </p>
         <br />
-        <LightgalleryItem src={asset5}>
-          <img src={asset5} alt="" />
+        <LightgalleryItem src={asset5ru}>
+          <img src={asset5ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -531,8 +565,8 @@ function RU() {
         <br />
         <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
         <br />
-        <LightgalleryItem src={asset6}>
-          <img src={asset6} alt="" />
+        <LightgalleryItem src={asset6ru}>
+          <img src={asset6ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -541,15 +575,15 @@ function RU() {
         <br />
         <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
         <br />
-        <LightgalleryItem src={asset7}>
-          <img src={asset7} alt="" />
+        <LightgalleryItem src={asset7ru}>
+          <img src={asset7ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <p className="bodyM">Обваловка мешками с песком и кругляками</p>
         <br />
-        <LightgalleryItem src={asset8}>
-          <img src={asset8} alt="" />
+        <LightgalleryItem src={asset8ru}>
+          <img src={asset8ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -580,18 +614,18 @@ function RU() {
           волну ядерного взрыва)
         </p>
         <br />
-        <LightgalleryItem src={asset10}>
-          <img src={asset10} alt="" />
+        <LightgalleryItem src={asset10ru}>
+          <img src={asset10ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset11}>
-          <img src={asset11} alt="" />
+        <LightgalleryItem src={asset11ru}>
+          <img src={asset11ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset12}>
-          <img src={asset12} alt="" />
+        <LightgalleryItem src={asset12ru}>
+          <img src={asset12ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -603,8 +637,8 @@ function RU() {
           ОПИРАЯ ПОТОЛОК НЕПОСРЕДСТВЕННО НА БАЛКАХ
         </h2>
         <br />
-        <LightgalleryItem src={asset13}>
-          <img src={asset13} alt="" />
+        <LightgalleryItem src={asset13ru}>
+          <img src={asset13ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -619,14 +653,14 @@ function RU() {
         <br />
         <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
         <br />
-        <LightgalleryItem src={asset14}>
-          <img src={asset14} alt="" />
+        <LightgalleryItem src={asset14ru}>
+          <img src={asset14ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <br />
-        <LightgalleryItem src={asset15}>
-          <img src={asset15} alt="" />
+        <LightgalleryItem src={asset15ru}>
+          <img src={asset15ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -823,8 +857,8 @@ function UA() {
         <strong>ВАРІАНТ 1: Мішки з піском</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset1}>
-          <img src={asset1} alt="" />
+        <LightgalleryItem src={asset1ua}>
+          <img src={asset1ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <p className="bodyM">
@@ -832,8 +866,8 @@ function UA() {
           дощок перед ним
         </p>
         <br />
-        <LightgalleryItem src={asset2}>
-          <img src={asset2} alt="" />
+        <LightgalleryItem src={asset2ua}>
+          <img src={asset2ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -841,13 +875,13 @@ function UA() {
         <strong>ВАРИАНТ 2: Мешки с песком</strong>
         <br />
         <br />
-        <LightgalleryItem src={asset3}>
-          <img src={asset3} alt="" />
+        <LightgalleryItem src={asset3ua}>
+          <img src={asset3ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset4}>
-          <img src={asset4} alt="" />
+        <LightgalleryItem src={asset4ua}>
+          <img src={asset4ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -856,8 +890,8 @@ function UA() {
           закрити вікна дошками та засипати простір між ними.
         </p>
         <br />
-        <LightgalleryItem src={asset5}>
-          <img src={asset5} alt="" />
+        <LightgalleryItem src={asset5ua}>
+          <img src={asset5ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -866,8 +900,8 @@ function UA() {
         <br />
         <h2>ЗАСИПКА ВГЛИБЛЕНОГО ПІДВАЛЬНОГО ВІКНА</h2>
         <br />
-        <LightgalleryItem src={asset6}>
-          <img src={asset6} alt="" />
+        <LightgalleryItem src={asset6ua}>
+          <img src={asset6ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -876,15 +910,15 @@ function UA() {
         <br />
         <h2>ОБВАЛУВАННЯ ЗОВНІШНІХ СТІН</h2>
         <br />
-        <LightgalleryItem src={asset7}>
-          <img src={asset7} alt="" />
+        <LightgalleryItem src={asset7ua}>
+          <img src={asset7ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <p className="bodyM">Обвалування мішками з піском та кругляком.</p>
         <br />
-        <LightgalleryItem src={asset8}>
-          <img src={asset8} alt="" />
+        <LightgalleryItem src={asset8ua}>
+          <img src={asset8ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -895,8 +929,8 @@ function UA() {
         <h2>ЗМІЦНЕННЯ СТЕЛІ</h2>
         <p className="bodyM">Необхідно на випадок обвалення будинку.</p>
         <br />
-        <LightgalleryItem src={asset9}>
-          <img src={asset9} alt="" />
+        <LightgalleryItem src={asset9ua}>
+          <img src={asset9ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -915,18 +949,18 @@ function UA() {
           каркас також розрахований на хвилю ядерного вибуху.)
         </p>
         <br />
-        <LightgalleryItem src={asset10}>
-          <img src={asset10} alt="" />
+        <LightgalleryItem src={asset10ua}>
+          <img src={asset10ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset11}>
-          <img src={asset11} alt="" />
+        <LightgalleryItem src={asset11ua}>
+          <img src={asset11ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
-        <LightgalleryItem src={asset12}>
-          <img src={asset12} alt="" />
+        <LightgalleryItem src={asset12ua}>
+          <img src={asset12ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -938,8 +972,8 @@ function UA() {
           ПІДПИРАЮЧИ СТЕЛЮ БЕЗПОСЕРЕДНЬО НА БАЛКАХ
         </h2>
         <br />
-        <LightgalleryItem src={asset13}>
-          <img src={asset13} alt="" />
+        <LightgalleryItem src={asset13ua}>
+          <img src={asset13ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
@@ -954,14 +988,14 @@ function UA() {
         <br />
         <h2>Пам'ятайте, що найголовніше – це зміцнити вікна та стелю!</h2>
         <br />
-        <LightgalleryItem src={asset14}>
-          <img src={asset14} alt="" />
+        <LightgalleryItem src={asset14ua}>
+          <img src={asset14ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
         <br />
-        <LightgalleryItem src={asset15}>
-          <img src={asset15} alt="" />
+        <LightgalleryItem src={asset15ua}>
+          <img src={asset15ua} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
