@@ -74,10 +74,10 @@ function PL() {
     <>
       <nav>
         <NavLink
-          to="/pl"
-          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
         >
-          PL
+          UA
         </NavLink>
         <NavLink
           to="/ru"
@@ -86,11 +86,12 @@ function PL() {
           RU
         </NavLink>
         <NavLink
-          to="/"
-          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
         >
-          UA
+          PL
         </NavLink>
+
         <Menu right />
       </nav>
       <section className="sect-1">
@@ -143,7 +144,6 @@ function PL() {
         <br />
         <p className="bodyM">
           <ul>
-            {" "}
             <li>Odłamkami bomb lotniczych i pocisków artyleryjskich </li>
             <li>Falą uderzeniową bomb lotniczych i pocisków artyleryjskich </li>
             <li>
@@ -176,7 +176,7 @@ function PL() {
         <br />
       </section>
       <section className="sect-3">
-        <h2>OCHRONA OKIEN</h2>
+        <h2 id="sec2">OCHRONA OKIEN</h2>
         <p className="bodyM">
           Okna są najsłabszą częścią piwnicy lub sutereny, dlatego należy je
           zabezpieczyć w następujący sposób
@@ -226,7 +226,7 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>
+        <h2 id="sec3">
           WYPEŁNIENIE OKNA PIWNICY ZNAJDUJĄCEGO SIĘ PONIŻEJ POZIOMU GRUNTU
         </h2>
         <br />
@@ -238,7 +238,7 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>Obłożenie ścian zewnętrznych</h2>
+        <h2 id="sec4">Obłożenie ścian zewnętrznych</h2>
         <br />
         <LightgalleryItem src={asset7pl}>
           <img src={asset7pl} alt="" />
@@ -256,7 +256,7 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>Wzmocnienie sufitu</h2>
+        <h2 id="sec5">Wzmocnienie sufitu</h2>
         <p className="bodyM">
           Konieczne w razie naruszenia konstrukcji budynku.
         </p>
@@ -322,7 +322,9 @@ function PL() {
         <br />
         <hr />
         <br />
-        <h2>RYSUNEK POGLĄDOWY PRZEDSTAWIAJĄCY NAJWAŻNIEJSZE ZMIANY</h2>
+        <h2 id="sec6">
+          RYSUNEK POGLĄDOWY PRZEDSTAWIAJĄCY NAJWAŻNIEJSZE ZMIANY
+        </h2>
         <br />
         <LightgalleryItem src={asset14pl}>
           <img src={asset14pl} alt="" />
@@ -341,7 +343,7 @@ function PL() {
       <section className="sect-4 pl">
         <br />
         <br />
-        <h1>INFORMACJE DODATKOWE</h1>
+        <h1 id="sec7">INFORMACJE DODATKOWE</h1>
         <ul>
           <li className="bodyM">
             Należy pamiętać o zaopatrzeniu miejsca ukrycia w zapas wody pitnej,
@@ -422,10 +424,10 @@ function RU() {
     <>
       <nav>
         <NavLink
-          to="/pl"
-          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
         >
-          PL
+          UA
         </NavLink>
         <NavLink
           to="/ru"
@@ -434,10 +436,10 @@ function RU() {
           RU
         </NavLink>
         <NavLink
-          to="/"
-          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
         >
-          UA
+          PL
         </NavLink>
         <Menu />
       </nav>
@@ -462,7 +464,7 @@ function RU() {
         </div>
         <br />
         <a href={pdf} download>
-          <button className="button">завантажити PDF</button>
+          <button className="button">скачать pdf</button>
         </a>
         <br />
         <br />
@@ -511,7 +513,7 @@ function RU() {
         <br />
       </section>
       <section className="sect-3 ru">
-        <h2>ЭАЩИТА ОКОН</h2>
+        <h2 id="sec2">ЭАЩИТА ОКОН</h2>
         <p className="bodyM">
           Окна являются самой слабой частью подвала и полуподвала, а потому
           необходимо их заложить следующим образом:
@@ -561,7 +563,7 @@ function RU() {
         <br />
         <hr />
         <br />
-        <h2>ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
+        <h2 id="sec3">ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА</h2>
         <br />
         <LightgalleryItem src={asset6ru}>
           <img src={asset6ru} alt="" />
@@ -571,7 +573,7 @@ function RU() {
         <br />
         <hr />
         <br />
-        <h2>ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
+        <h2 id="sec4">ОБВАЛОВКА НАРУЖНЬІХ СТЕН</h2>
         <br />
         <LightgalleryItem src={asset7ru}>
           <img src={asset7ru} alt="" />
@@ -589,7 +591,7 @@ function RU() {
         <br />
         <hr />
         <br />
-        <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
+        <h2 id="sec5">УКРЕПЛЕНИЕ ПОТОЛКА</h2>
         <p className="bodyM">Необходимо на случай обрушения здания.</p>
         <br />
         <LightgalleryItem src={asset9ru}>
@@ -649,7 +651,7 @@ function RU() {
         <br />
         <hr />
         <br />
-        <h2>УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
+        <h2 id="sec6">УСЛОВНЬІ ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ</h2>
         <br />
         <LightgalleryItem src={asset14ru}>
           <img src={asset14ru} alt="" />
@@ -668,7 +670,7 @@ function RU() {
       <section className="sect-4 ru">
         <br />
         <br />
-        <h1>ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
+        <h1 id="sec7">ОСТАЛЬНАЯ ИНФОРМАЦИЯ</h1>
         <ul>
           <li className="bodyM">
             Не забудьте обеспечить в вашем укрытии запас питьевой воды, еды и
@@ -748,10 +750,10 @@ function UA() {
     <>
       <nav>
         <NavLink
-          to="/pl"
-          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
+          to="/"
+          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
         >
-          PL
+          UA
         </NavLink>
         <NavLink
           to="/ru"
@@ -760,10 +762,10 @@ function UA() {
           RU
         </NavLink>
         <NavLink
-          to="/"
-          className={(isActive) => "ua" + (!isActive ? " unselected" : "")}
+          to="/pl"
+          className={(isActive) => "pl" + (!isActive ? " unselected" : "")}
         >
-          UA
+          PL
         </NavLink>
         <Menu />
       </nav>
@@ -846,7 +848,7 @@ function UA() {
         <br />
       </section>
       <section className="sect-3 ua">
-        <h2>ЗАХИСТ ВІКОН</h2>
+        <h2 id="sec2">ЗАХИСТ ВІКОН</h2>
         <p className="bodyM">
           Вікна – це найслабкіша частина підвалу та напівпідвалу, тож їх
           необхідно закласти наступним чином:
@@ -896,7 +898,7 @@ function UA() {
         <br />
         <hr />
         <br />
-        <h2>ЗАСИПКА ВГЛИБЛЕНОГО ПІДВАЛЬНОГО ВІКНА</h2>
+        <h2 id="sec3">ЗАСИПКА ВГЛИБЛЕНОГО ПІДВАЛЬНОГО ВІКНА</h2>
         <br />
         <LightgalleryItem src={asset6ua}>
           <img src={asset6ua} alt="" />
@@ -906,7 +908,7 @@ function UA() {
         <br />
         <hr />
         <br />
-        <h2>ОБВАЛУВАННЯ ЗОВНІШНІХ СТІН</h2>
+        <h2 id="sec4">ОБВАЛУВАННЯ ЗОВНІШНІХ СТІН</h2>
         <br />
         <LightgalleryItem src={asset7ua}>
           <img src={asset7ua} alt="" />
@@ -924,7 +926,7 @@ function UA() {
         <br />
         <hr />
         <br />
-        <h2>ЗМІЦНЕННЯ СТЕЛІ</h2>
+        <h2 id="sec5">ЗМІЦНЕННЯ СТЕЛІ</h2>
         <p className="bodyM">Необхідно на випадок обвалення будинку.</p>
         <br />
         <LightgalleryItem src={asset9ua}>
@@ -984,7 +986,9 @@ function UA() {
         <br />
         <hr />
         <br />
-        <h2>Пам'ятайте, що найголовніше – це зміцнити вікна та стелю!</h2>
+        <h2 id="sec6">
+          Пам'ятайте, що найголовніше – це зміцнити вікна та стелю!
+        </h2>
         <br />
         <LightgalleryItem src={asset14ua}>
           <img src={asset14ua} alt="" />
@@ -1003,7 +1007,7 @@ function UA() {
       <section className="sect-4 ua">
         <br />
         <br />
-        <h1>ДОДАТКОВА ІНФОРМАЦІЯ</h1>
+        <h1 id="sec7">ДОДАТКОВА ІНФОРМАЦІЯ</h1>
         <ul>
           <li className="bodyM">
             Не забудьте забезпечити ваше укриття запасом питної води, їжі та
