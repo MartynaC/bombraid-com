@@ -24,37 +24,37 @@ import asset13ru from "./img/RU/Asset13.svg";
 import asset14ru from "./img/RU/Asset14.svg";
 import asset15ru from "./img/RU/Asset15.svg";
 
-import asset1ua from "./img/ua/asset1.svg";
-import asset2ua from "./img/ua/Asset2.svg";
-import asset3ua from "./img/ua/Asset3.svg";
-import asset4ua from "./img/ua/Asset4.svg";
-import asset5ua from "./img/ua/Asset5.svg";
-import asset6ua from "./img/ua/Asset6.svg";
-import asset7ua from "./img/ua/Asset7.svg";
-import asset8ua from "./img/ua/Asset8.svg";
-import asset9ua from "./img/ua/Asset9.svg";
-import asset10ua from "./img/ua/Asset10.svg";
-import asset11ua from "./img/ua/Asset11.svg";
-import asset12ua from "./img/ua/Asset12.svg";
-import asset13ua from "./img/ua/Asset13.svg";
-import asset14ua from "./img/ua/Asset14.svg";
-import asset15ua from "./img/ua/Asset15.svg";
+import asset1ua from "./img/UA/asset1.svg";
+import asset2ua from "./img/UA/Asset2.svg";
+import asset3ua from "./img/UA/Asset3.svg";
+import asset4ua from "./img/UA/Asset4.svg";
+import asset5ua from "./img/UA/Asset5.svg";
+import asset6ua from "./img/UA/Asset6.svg";
+import asset7ua from "./img/UA/Asset7.svg";
+import asset8ua from "./img/UA/Asset8.svg";
+import asset9ua from "./img/UA/Asset9.svg";
+import asset10ua from "./img/UA/Asset10.svg";
+import asset11ua from "./img/UA/Asset11.svg";
+import asset12ua from "./img/UA/Asset12.svg";
+import asset13ua from "./img/UA/Asset13.svg";
+import asset14ua from "./img/UA/Asset14.svg";
+import asset15ua from "./img/UA/Asset15.svg";
 
-import asset1pl from "./img/pl/asset1.svg";
-import asset2pl from "./img/pl/Asset2.svg";
-import asset3pl from "./img/pl/Asset3.svg";
-import asset4pl from "./img/pl/Asset4.svg";
-import asset5pl from "./img/pl/Asset5.svg";
-import asset6pl from "./img/pl/Asset6.svg";
-import asset7pl from "./img/pl/Asset7.svg";
-import asset8pl from "./img/pl/Asset8.svg";
-import asset9pl from "./img/pl/Asset9.svg";
-import asset10pl from "./img/pl/Asset10.svg";
-import asset11pl from "./img/pl/Asset11.svg";
-import asset12pl from "./img/pl/Asset12.svg";
-import asset13pl from "./img/pl/Asset13.svg";
-import asset14pl from "./img/pl/Asset14.svg";
-import asset15pl from "./img/pl/Asset15.svg";
+import asset1pl from "./img/PL/asset1.svg";
+import asset2pl from "./img/PL/Asset2.svg";
+import asset3pl from "./img/PL/Asset3.svg";
+import asset4pl from "./img/PL/Asset4.svg";
+import asset5pl from "./img/PL/Asset5.svg";
+import asset6pl from "./img/PL/Asset6.svg";
+import asset7pl from "./img/PL/Asset7.svg";
+import asset8pl from "./img/PL/Asset8.svg";
+import asset9pl from "./img/PL/Asset9.svg";
+import asset10pl from "./img/PL/Asset10.svg";
+import asset11pl from "./img/PL/Asset11.svg";
+import asset12pl from "./img/PL/Asset12.svg";
+import asset13pl from "./img/PL/Asset13.svg";
+import asset14pl from "./img/PL/Asset14.svg";
+import asset15pl from "./img/PL/Asset15.svg";
 
 import pdf from "./pdf/КАК УКРЕПИТЬ ПОДВАЛ.pdf";
 import pdfua from "./pdf/ЯК ЗМІЦНИТИ ПІДВАЛ.pdf";
@@ -594,8 +594,8 @@ function RU() {
         <h2>УКРЕПЛЕНИЕ ПОТОЛКА</h2>
         <p className="bodyM">Необходимо на случай обрушения здания.</p>
         <br />
-        <LightgalleryItem src={asset9}>
-          <img src={asset9} alt="" />
+        <LightgalleryItem src={asset9ru}>
+          <img src={asset9ru} alt="" />
           <img className="lupka" src={lupka} alt="" />
         </LightgalleryItem>
         <br />
