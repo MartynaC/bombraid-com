@@ -1,7 +1,5 @@
 import "./App.css";
 import Menu from "./components/Menu.js";
-import MenuPl from "./components/MenuPl.js";
-import MenuUa from "./components/MenuUa.js";
 import BackToTop from "./components/BackToTop.js";
 import { LightgalleryItem } from "react-lightgallery";
 import { Routes, Route, NavLink } from "react-router-dom";
@@ -94,11 +92,7 @@ function PL() {
           PL
         </NavLink>
 
-
         <Menu right />
-
-        <MenuPl right />
-
       </nav>
       <section className="sect-1">
         <h1>
@@ -773,7 +767,7 @@ function UA() {
         >
           PL
         </NavLink>
-        <MenuUa />
+        <Menu />
       </nav>
 
       <section className="sect-1">
