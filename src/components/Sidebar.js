@@ -15,7 +15,7 @@ export default (props) => {
           <a href="/ua">UA</a>
         </li>
       </ul>
-      <a className="menu-item" href="#sec1">
+      <a className="menu-item" href="/#sec1">
         ГРАЖДАНE УКРАИНЬI!
       </a>
       <a className="menu-item" href="/salads">

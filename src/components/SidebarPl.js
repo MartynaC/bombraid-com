@@ -15,25 +15,25 @@ export default (props) => {
           <a href="/ua">UA</a>
         </li>
       </ul>
- <a className="menu-item" href="#sec1">
+ <a className="menu-item" href="/#sec1">
         OBYWATELE UKRAINY!
       </a>
-      <a className="menu-item" href="#sec2">
+      <a className="menu-item" href="/#sec2">
         OCHRONA OKIEN
       </a>
-      <a className="menu-item" href="#sec3">
+      <a className="menu-item" href="/#sec3">
         WYPEŁNIENIE OKNA PIWNICY ZNAJDUJĄCEGO SIĘ PONIŻEJ POZIOMU GRUNTU
       </a>
-      <a className="menu-item" href="#sec4">
+      <a className="menu-item" href="/#sec4">
         OBŁOŻENIE ŚCIAN ZEWNĘTRZNYCH
       </a>
-      <a className="menu-item" href="#sec5">
+      <a className="menu-item" href="/#sec5">
         WZMOCNIENIE SUFITU
       </a>
-      <a className="menu-item" href="#sec6">
+      <a className="menu-item" href="/#sec6">
         RYSUNEK POGLĄDOWY PRZEDSTAWIAJĄCY NAJWAŻNIEJSZE ZMIANY
       </a>
-      <a className="menu-item" href="#sec7">
+      <a className="menu-item" href="/#sec7">
         INFORMACJE DODATKOWE
       </a>
     </MenuPl>
