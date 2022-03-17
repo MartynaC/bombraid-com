@@ -58,7 +58,7 @@ import asset15pl from "./img/PL/Asset15.svg";
 
 import pdf from "./pdf/КАК УКРЕПИТЬ ПОДВАЛ.pdf";
 import pdfua from "./pdf/ЯК ЗМІЦНИТИ ПІДВАЛ.pdf";
-import pdfpl from "./pdf/JAK WZMOCNIĆ PIWNICĘ.pdf";
+import pdfpl from "./pdf/JAK WZMOCNIĆ PIWNICĘ.pdf";
 
 function App() {
   return (
