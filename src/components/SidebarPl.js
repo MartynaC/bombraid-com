@@ -6,13 +6,13 @@ export default (props) => {
     <MenuPl>
       <ul className="nav">
         <li>
-          <a href="/">PL</a>
+          <a href="/pl">PL</a>
         </li>
         <li>
           <a href="/ru">RU</a>
         </li>
         <li>
-          <a href="/ua">UA</a>
+          <a href="/">UA</a>
         </li>
       </ul>
       <a className="menu-item" href="/pl/#sec1pl">
