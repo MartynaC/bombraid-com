@@ -15,25 +15,25 @@ export default (props) => {
           <a href="/ua">UA</a>
         </li>
       </ul>
-      <a className="menu-item" href="/#sec1ru">
+      <a className="menu-item" href="/ru/#sec1ru">
         ГРАЖДАНE УКРАИНЬI!
       </a>
-      <a className="menu-item" href="/#sec2ru">
+      <a className="menu-item" href="/ru/#sec2ru">
         ЭАЩИТА ОКОН
       </a>
-      <a className="menu-item" href="/#sec3ru">
+      <a className="menu-item" href="/ru/#sec3ru">
         ЭАСЬІПКА УГЛУБЛЕННОГО ПОДВАЛЬНОГО ОКНА
       </a>
-      <a className="menu-item" href="/#sec4ru">
+      <a className="menu-item" href="/ru/#sec4ru">
         ОБВАЛОВКА НАРУЖНЬІХ СТЕН
       </a>
-      <a className="menu-item" href="/#sec5ru">
+      <a className="menu-item" href="/ru/#sec5ru">
         УКРЕПЛЕНИЕ ПОТОЛКА
       </a>
-      <a className="menu-item" href="/#sec6ru">
+      <a className="menu-item" href="/ru/#sec6ru">
         УСЛОВНЬІЙ РИСУНОК ПОКАЗЬІВАЮЩИЙ ОСНОВНЬІЕ ИЗМЕНЕНИЯ
       </a>
-      <a className="menu-item" href="/#sec7ru">
+      <a className="menu-item" href="/ru/#sec7ru">
         ОСТАЛЬНАЯ ИНФОРМАЦИЯ
       </a>
     </Menu>
